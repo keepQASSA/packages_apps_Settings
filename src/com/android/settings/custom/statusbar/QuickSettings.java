@@ -29,6 +29,7 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
+import com.android.settings.custom.preference.CustomSeekBarPreference;
 import com.android.settings.custom.preference.SystemSettingListPreference;
 import com.android.settings.custom.preference.SystemSettingSwitchPreference;
 
@@ -51,6 +52,7 @@ public class QuickSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_QUICK_QS_ANIMATION_TILE_DURATION = "anim_tile_duration";
     private static final String STATUS_BAR_QUICK_QS_ANIMATION_TILE_INTERPOLATOR = "anim_tile_interpolator";
     private static final String HEADER_ICONS_STYLE = "headers_icons_style";
+    private static final String QS_BLUR_RADIUS = "qs_blur_radius";
 
     private static final int PULLDOWN_DIR_NONE = 0;
     private static final int PULLDOWN_DIR_RIGHT = 1;
@@ -64,6 +66,8 @@ public class QuickSettings extends SettingsPreferenceFragment
     private SystemSettingSwitchPreference mHeaderIconsStyle;
 
     private SwitchPreference mStatusBarQsShowAutoBrightness;
+
+    private CustomSeekBarPreference mQsBlurRadius;
 
     private PreferenceCategory mStatusBarBrightnessCategory;
     private PreferenceCategory mStatusBarQsAnimationCategory;
@@ -109,6 +113,12 @@ public class QuickSettings extends SettingsPreferenceFragment
         mHeaderIconsStyle.setChecked((Settings.System.getInt(resolver,
                 Settings.System.HEADER_ICONS_STYLE, 0) == 1));
         mHeaderIconsStyle.setOnPreferenceChangeListener(this);
+
+        mQsBlurRadius = (CustomSeekBarPreference) findPreference(QS_BLUR_RADIUS);
+        final int blurRadius = Settings.System.getInt(resolver,
+                Settings.System.QS_BLUR_RADIUS, 0);
+            mQsBlurRadius.setValue((blurRadius));
+            mQsBlurRadius.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -140,6 +150,11 @@ public class QuickSettings extends SettingsPreferenceFragment
         case STATUS_BAR_QUICK_QS_ANIMATION_STYLE:
                 updateQsAnimationDependents(value);
                 break;
+        case QS_BLUR_RADIUS:
+                Integer blurRadius = (Integer) newValue;
+                Settings.System.putInt(resolver,
+                        Settings.System.QS_BLUR_RADIUS, blurRadius);
+                return true;
         }
         return true;
     }

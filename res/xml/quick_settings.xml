@@ -77,6 +77,15 @@
             android:summary="@string/blur_quicksettings_summary"
             android:defaultValue="true" />
 
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="qs_blur_radius"
+            android:title="@string/qs_blur_radius_title"
+            android:summary="@string/qs_blur_radius_summary"
+            android:dependency="qs_blur"
+            android:max="25"
+            settings:min="1"
+            android:defaultValue="7" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
