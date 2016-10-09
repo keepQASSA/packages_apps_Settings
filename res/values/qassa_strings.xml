@@ -504,4 +504,9 @@ Notifications may be delayed for these apps."</string>
         <item quantity="one">1 app locked</item>
         <item quantity="other">%d apps locked</item>
     </plurals>
+
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+
 </resources>
