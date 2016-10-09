@@ -332,4 +332,6 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
         <item quantity="one">1 aplikasi terkunci</item>
         <item quantity="other">%d aplikasi terkunci</item>
     </plurals>
+    <string name="unlock_quick_unlock_control_title">Buka cepat</string>
+    <string name="unlock_quick_unlock_control_summary">Buka kunci secara otomatis ketika PIN/sandi yang benar dimasukkan</string>
 </resources>
