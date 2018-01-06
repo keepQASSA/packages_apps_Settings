@@ -117,12 +117,20 @@
         settings:controller="com.android.settings.notification.VibrateWhenRingPreferenceController"
         android:order="-130"/>
 
+    <!-- Volume Steps -->
+    <Preference
+        android:key="volume_steps"
+        android:title="@string/volume_steps_title"
+        android:summary="@string/volume_steps_summary"
+        android:fragment="com.android.settings.sound.VolumeSteps"
+        android:order="-130" />
+
     <!-- Interruptions -->
     <com.android.settingslib.RestrictedPreference
         android:key="zen_mode"
         android:title="@string/zen_mode_settings_title"
         android:fragment="com.android.settings.notification.ZenModeSettings"
-        android:order="-120"
+        android:order="-110"
         settings:useAdminDisabledSummary="true"
         settings:keywords="@string/keywords_sounds_and_notifications_interruptions"
         settings:allowDividerAbove="true"
@@ -142,7 +150,7 @@
         android:dialogTitle="@string/ringtone_title"
         android:summary="@string/summary_placeholder"
         android:ringtoneType="ringtone"
-        android:order="-100"
+        android:order="-90"
         settings:keywords="@string/sound_settings"/>
 
     <!-- Default notification ringtone -->
