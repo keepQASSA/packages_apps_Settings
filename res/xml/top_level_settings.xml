@@ -26,9 +26,18 @@
         android:title="@string/network_dashboard_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_network"
-        android:order="-120"
+        android:order="-130"
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         settings:controller="com.android.settings.network.TopLevelNetworkEntryPreferenceController"/>
+
+    <Preference
+        android:key="top_level_keepqassa"
+        android:layout="@layout/xd_dashboard_pref_mid"
+        android:title="@string/keepqassa_dashboard_title"
+        android:summary="@string/keepqassa_dashboard_summary"
+        android:icon="@drawable/ic_homepage_keepqassa"
+        android:order="-120"
+        android:fragment="com.keepqassa.settings.keepQASSA"/>
 
     <Preference
         android:key="top_level_connected_devices"

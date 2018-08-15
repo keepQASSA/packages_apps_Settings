@@ -486,4 +486,7 @@ Notifications may be delayed for these apps."</string>
     <string name="build_date_default">2022-25-03-22253</string>
     <string name="keywords_build_date">build date, build info</string>
 
+    <!-- keepQASSA -->
+    <string name="keepqassa_dashboard_title">#keepQASSA</string>
+    <string name="keepqassa_dashboard_summary">here we keep QASSA</string>
 </resources>
