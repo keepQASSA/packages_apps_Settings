@@ -514,4 +514,8 @@ Notifications may be delayed for these apps."</string>
 
     <!-- Back gesture animation -->
     <string name="back_gesture_arrow_message">Show an animated arrow for back gesture.</string>
+
+    <!-- keepQASSA -->
+    <string name="keepqassa_dashboard_title">#keepQASSA</string>
+    <string name="keepqassa_dashboard_summary">here we keep QASSA</string>
 </resources>
