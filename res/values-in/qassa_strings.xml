@@ -368,4 +368,8 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="adaptive_playback_timeout_10_min_summary">Aktif (10 menit)</string>
     <string name="ambient_battery_percent_title">Level baterai di bagian bawah</string>
     <string name="ambient_battery_percent_summary">Aktifkan untuk menampilkan persen baterai saat tertidur</string>
+    <string name="adb_over_network">ADB melalui jaringan</string>
+    <string name="adb_over_network_summary">Aktifkan proses debug TCP/IP melalui antarmuka jaringan (Wi-Fi, jaringan USB). Pengaturan ini disetel ulang saat reboot</string>
+    <string name="adb_over_network_warning">PERINGATAN: Saat ADB melalui jaringan diaktifkan, ponsel Anda terbuka untuk intrusi di semua jaringan yang terhubung, termasuk jaringan data GSM!\n\nHanya gunakan fitur ini saat Anda terhubung di jaringan tepercaya.\n \nApakah Anda benar-benar ingin mengaktifkan fungsi ini?</string>
+    <string name="adb_over_network_warning_title">Izinkan ADB melalui jaringan?</string>
 </resources>
