@@ -185,4 +185,5 @@ public class Settings extends SettingsActivity {
 
     // QASSA Additions.
     public static class keepQASSAActivity extends SettingsActivity {}
+    public static class OmniJawsSettingsActivity extends SettingsActivity {}
 }
