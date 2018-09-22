@@ -56,6 +56,8 @@ import com.android.settingslib.core.instrumentation.Instrumentable;
 import com.android.settingslib.widget.FooterPreferenceMixinCompat;
 import com.android.settingslib.widget.LayoutPreference;
 
+import com.android.settings.custom.preference.CustomDialogPreference;
+
 import java.util.UUID;
 
 /**
@@ -532,6 +534,9 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
                     .newInstance(preference.getKey());
         } else if (preference instanceof CustomDialogPreferenceCompat) {
             f = CustomDialogPreferenceCompat.CustomPreferenceDialogFragment
+                    .newInstance(preference.getKey());
+        } else if (preference instanceof CustomDialogPreference) {
+            f = CustomDialogPreference.CustomPreferenceDialogFragment
                     .newInstance(preference.getKey());
         } else if (preference instanceof CustomEditTextPreferenceCompat) {
             f = CustomEditTextPreferenceCompat.CustomPreferenceDialogFragment
