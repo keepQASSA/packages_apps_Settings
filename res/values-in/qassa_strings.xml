@@ -334,4 +334,5 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     </plurals>
     <string name="unlock_quick_unlock_control_title">Buka cepat</string>
     <string name="unlock_quick_unlock_control_summary">Buka kunci secara otomatis ketika PIN/sandi yang benar dimasukkan</string>
+    <string name="density_category">Density options</string>
 </resources>
