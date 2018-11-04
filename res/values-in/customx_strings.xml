@@ -269,4 +269,6 @@
     <string name="statusbar_icons_style_summary">Aktifkan Notifikasi statusbar berwarna</string>
     <string name="header_icons_style">Notifikasi QS Headers berwarna</string>
     <string name="header_icons_style_summary">Aktifkan Notifikasi QS headers berwarna</string>
+    <string name="status_bar_notif_count_title">Jumlah notifikasi</string>
+    <string name="status_bar_notif_count_summary">Tampilkan jumlah notifikasi yang belum di baca</string>
 </resources>
