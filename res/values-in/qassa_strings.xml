@@ -382,4 +382,11 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="low_battery_light_summary">LED berkedip saat baterai hampir habis</string>
     <string name="high_touch_polling_rate_title">Tingkat polling sentuhan tinggi</string>
     <string name="high_touch_polling_rate_summary">Tingkatkan rasio polling layar sentuh</string>
+    <string name="notification_sound_battery_charge_title">Aktifkan peringatan tingkat pengisian daya baterai</string>
+    <string name="notification_sound_battery_charge_summary">Memutar suara saat baterai mencapai level pengisian daya</string>
+    <string name="notification_battery_charge_level_title">Peringatan pengisian daya baterai</string>
+    <string name="notification_battery_charge_level_summary">Putar suara saat baterai mencapai level saat mengisi daya</string>
+    <string name="notification_battery_charge_level_seek_bar">Level baterai</string>
+    <string name="notification_battery_charge_level_ringtone">Nada Dering</string>
+    <string name="notification_battery_charge_level_silent">Senyap</string>
 </resources>
