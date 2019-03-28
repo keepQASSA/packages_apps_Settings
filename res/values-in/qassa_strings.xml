@@ -343,4 +343,9 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="notification_log_summary">Tampilkan log riwayat pemberitahuan</string>
     <string name="adb_enable_root">Debug yang di-root</string>
     <string name="adb_enable_summary_root">Izinkan menjalankan debugging Android sebagai root</string>
+    <string name="smart_charging_title">Pengisian Cerdas</string>
+    <string name="smart_charging_summary">Setel tingkat pengisian maksimum</string>
+    <string name="smart_charging_switch_title">Gunakan Smart charging</string>
+    <string name="smart_charging_level_title">Tingkat pemicu</string>
+    <string name="smart_charging_footer">Smart Charging memungkinkan Anda menyetel tingkat pengisian daya maksimum untuk memperpanjang masa pakai baterai</string>
 </resources>
