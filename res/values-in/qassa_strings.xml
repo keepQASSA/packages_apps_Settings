@@ -348,5 +348,7 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="smart_charging_switch_title">Gunakan Smart charging</string>
     <string name="smart_charging_level_title">Hentikan level pemicu</string>
     <string name="smart_charging_resume_level_title">Mulai level pemicu</string>
+    <string name="smart_charging_reset_stats_title">Setel ulang statistik baterai</string>
+    <string name="smart_charging_reset_stats_summary">Setel ulang statistik baterai setelah mencapai tingkat pengisian daya yang ditentukan pengguna</string>
     <string name="smart_charging_footer">Smart Charging memungkinkan Anda menyetel tingkat pengisian daya maksimum untuk memperpanjang masa pakai baterai</string>
 </resources>
