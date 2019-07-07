@@ -185,4 +185,6 @@ public class Settings extends SettingsActivity {
 
     // QASSA Additions.
     public static class keepQASSAActivity extends SettingsActivity {}
+
+    public static class SmartPixelsActivity extends SettingsActivity {}
 }

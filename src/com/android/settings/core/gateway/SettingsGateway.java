@@ -154,6 +154,8 @@ import com.android.settings.livedisplay.LiveDisplaySettings;
 
 import com.keepqassa.settings.keepQASSA;
 
+import com.keepqassa.settings.fragments.misc.SmartPixels;
+
 public class SettingsGateway {
 
     /**
@@ -293,7 +295,8 @@ public class SettingsGateway {
             DarkModeSettingsFragment.class.getName(),
             LiveDisplaySettings.class.getName(),
             keepQASSA.class.getName(),
-            RunningServices.class.getName()
+            RunningServices.class.getName(),
+            SmartPixels.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -334,5 +337,6 @@ public class SettingsGateway {
             UserBackupSettingsActivity.class.getName(),
             Settings.keepQASSAActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName(),
     };
 }
