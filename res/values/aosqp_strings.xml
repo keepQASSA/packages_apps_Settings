@@ -481,4 +481,9 @@ Notifications may be delayed for these apps."</string>
     <!-- Device Codename -->
     <string name="about_device_name">Device Codename</string>
 
+    <!-- About phone screen, build date -->
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">2022-25-03-22253</string>
+    <string name="keywords_build_date">build date, build info</string>
+
 </resources>
