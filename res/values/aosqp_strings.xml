@@ -504,4 +504,5 @@ Notifications may be delayed for these apps."</string>
     <string name="sbc_hd_priority_title">SBC HD audio</string>
     <string name="sbc_hd_priority_summary">Whether to use Dual Channel mode for SBC codec by default</string>
 
+    <string name="battery_temp">Battery temperature</string>
 </resources>

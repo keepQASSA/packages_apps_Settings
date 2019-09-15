@@ -259,4 +259,5 @@
     <string name="back_gesture_arrow_message">Tampilkan animasi panah di gestur kembali.</string>
     <string name="battery_stats_reset">Setel ulang statistik</string>
     <string name="battery_stats_message">Statistik riwayat baterai akan diatur ulang</string>
+    <string name="battery_temp">Suhu baterai</string>
 </resources>
