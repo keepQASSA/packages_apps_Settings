@@ -341,4 +341,6 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="unknown_night_light_time">Tidak diketahui - tekan untuk memperbarui</string>
     <string name="night_display_location_text">\n\nJadwal dari matahari terbenam hingga matahari terbit memerlukan layanan lokasi yang diaktifkan untuk mendapatkan waktu yang tepat untuk lokasi Anda.</string>
     <string name="notification_log_summary">Tampilkan log riwayat pemberitahuan</string>
+    <string name="adb_enable_root">Debug yang di-root</string>
+    <string name="adb_enable_summary_root">Izinkan menjalankan debugging Android sebagai root</string>
 </resources>
