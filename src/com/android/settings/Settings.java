@@ -183,4 +183,6 @@ public class Settings extends SettingsActivity {
 
     // AOSQP Additions.
     public static class keepQASSAActivity extends SettingsActivity {}
+
+    public static class GamingModeActivity extends SettingsActivity {}
 }
