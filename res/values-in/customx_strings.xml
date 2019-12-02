@@ -258,4 +258,5 @@
     <string name="rows_columns_qs_title">Baris dan Kolom</string>
     <string name="maintainer">Pengelola</string>
     <string name="aosqp_version_title">Versi AOSQP</string>
+    <string name="about_device_name">Nama perangkat</string>
 </resources>
