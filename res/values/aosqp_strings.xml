@@ -479,4 +479,8 @@ Notifications may be delayed for these apps."</string>
     <string name="platform_revision">Platform</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">Total available RAM</string>
+
+    <!-- Device Codename -->
+    <string name="about_device_name">Device Codename</string>
+
 </resources>
