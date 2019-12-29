@@ -271,4 +271,6 @@
     <string name="header_icons_style_summary">Aktifkan Notifikasi QS headers berwarna</string>
     <string name="status_bar_notif_count_title">Jumlah notifikasi</string>
     <string name="status_bar_notif_count_summary">Tampilkan jumlah notifikasi yang belum di baca</string>
+    <string name="enable_clear_all_button">Ganti teks hapus semua dengan tombol yang bagus</string>
+    <string name="enable_clear_all_button_summary">Tampilkan tombol hapus semua notifikasi di quick settings dari pada tombol teks default</string>
 </resources>
