@@ -458,4 +458,8 @@ Notifications may be delayed for these apps."</string>
     <string name="auto_brightness_min_title">Minimal brightness level</string>
     <string name="auto_brightness_description_new">Your screen brightness will automatically adjust to your environment and activities.\n\nYou can adjust a minimal brightness level that will be used.</string>
 
+    <!-- About phone screen, Aosqp version -->
+    <string name="maintainer">Maintainer</string>
+    <string name="maintainer_name">ghou8s</string>
+
 </resources>
