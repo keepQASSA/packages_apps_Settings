@@ -34,22 +34,27 @@ import com.android.settings.core.BasePreferenceController;
 
     private static final Uri INTENT_URI_DATA = Uri.parse("https://t.me/ngantuprjkt/");
     private static final String TAG = "qassaDialogCtrl";
-    private static final String PROPERTY_QASSA_VERSION = "ro.qassa.version.number";
+    private static final String QASSA_VERSION_NUMBER = "ro.qassa.version.number";
+    private static final String QASSA_BUILD_CODENAME = "ro.qassa.build.codename";
     private final PackageManager mPackageManager = this.mContext.getPackageManager();
 
-    public QASSAVersionPreferenceController(Context context, String key) {
-        super(context, key);
+    public QASSAVersionPreferenceController(Context context, String preferenceKey) {
+        super(context, preferenceKey);
     }
 
-    @Override
     public int getAvailabilityStatus() {
-        if (!TextUtils.isEmpty(SystemProperties.get(PROPERTY_QASSA_VERSION))) return AVAILABLE;
-        return CONDITIONALLY_UNAVAILABLE;
+        return AVAILABLE;
     }
 
     public CharSequence getSummary() {
-        return SystemProperties.get(PROPERTY_QASSA_VERSION,
-                mContext.getString(R.string.unknown));
+        String qassaVersion = SystemProperties.get(QASSA_VERSION_NUMBER,
+                mContext.getString(R.string.device_info_default));
+        String qassaCodename =  SystemProperties.get(QASSA_BUILD_CODENAME,
+                this.mContext.getString(R.string.device_info_default));
+        if (!qassaVersion.isEmpty() && !qassaCodename.isEmpty())
+            return qassaVersion + " | " + qassaCodename;
+        else
+            return mContext.getString(R.string.unknown);
     }
 
     public boolean handlePreferenceTreeClick(Preference preference) {
