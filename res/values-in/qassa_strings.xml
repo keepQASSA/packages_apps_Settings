@@ -338,4 +338,6 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="changelog_error">Tidak dapat memuat changelog</string>
     <string name="wifi_tether_client_list_title">Daftar Klien</string>
     <string name="wifi_tether_client_list_summary">Kelola klien yang terhubung ke hotspot</string>
+    <string name="unknown_night_light_time">Tidak diketahui - tekan untuk memperbarui</string>
+    <string name="night_display_location_text">\n\nJadwal dari matahari terbenam hingga matahari terbit memerlukan layanan lokasi yang diaktifkan untuk mendapatkan waktu yang tepat untuk lokasi Anda.</string>
 </resources>
