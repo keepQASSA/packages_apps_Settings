@@ -205,6 +205,9 @@ public class NotificationStation extends SettingsPreferenceFragment implements I
     public void onResume() {
         logd("onResume()");
         super.onResume();
+        // Set correct title on the action bar
+        getActivity().setTitle(R.string.notification_log_title);
+
         try {
             mListener.registerAsSystemService(mContext, new ComponentName(mContext.getPackageName(),
                     this.getClass().getCanonicalName()), ActivityManager.getCurrentUser());
