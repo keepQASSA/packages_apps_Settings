@@ -378,4 +378,6 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="longpress_to_clipboard">Tekan lama untuk menyalin</string>
     <string name="high_power_apps_summary">Ketersediaan pengoptimalan baterai</string>
     <string name="search">Mencari</string>
+    <string name="low_battery_light_title">Lampu baterai lemah</string>
+    <string name="low_battery_light_summary">LED berkedip saat baterai hampir habis</string>
 </resources>
