@@ -511,4 +511,9 @@ Notifications may be delayed for these apps."</string>
     <!-- OOS clear all button -->
     <string name="enable_clear_all_button">Replace clear all text with nice button</string>
     <string name="enable_clear_all_button_summary">Show clear all notifications button in quick settings instead of default text one</string>
+
+    <!-- QS blur -->
+    <string name="blur_qs_title">Blur</string>
+    <string name="blur_quicksettings_title">Blur behind quick settings</string>
+    <string name="blur_quicksettings_summary">Blurs the darkened background behind quick settings</string>
 </resources>
