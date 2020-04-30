@@ -352,8 +352,10 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="smart_charging_reset_stats_summary">Setel ulang statistik baterai setelah mencapai tingkat pengisian daya yang ditentukan pengguna</string>
     <string name="smart_charging_footer">Smart Charging memungkinkan Anda menyetel tingkat pengisian daya maksimum untuk memperpanjang masa pakai baterai</string>
     <string name="adaptive_playback_screen_title">Pemutaran adaptif</string>
+    <string name="adaptive_playback_disabled_summary">Nonaktif</string>
     <string name="adaptive_playback_timeout_title">Gunakan batas waktu</string>
-    <string name="adaptive_playback_timeout_none_summary">Nonaktif</string>
+    <string name="adaptive_playback_timeout_none">Tidak ada batas waktu</string>
+    <string name="adaptive_playback_timeout_none_summary">Aktif (tanpa batas waktu)</string>
     <string name="adaptive_playback_timeout_30_secs">30 detik</string>
     <string name="adaptive_playback_timeout_30_secs_summary">Aktif (30 detik)</string>
     <string name="adaptive_playback_timeout_1_min">1 menit</string>
