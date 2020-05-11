@@ -260,4 +260,10 @@
     <string name="battery_stats_reset">Setel ulang statistik</string>
     <string name="battery_stats_message">Statistik riwayat baterai akan diatur ulang</string>
     <string name="battery_temp">Suhu baterai</string>
+    <string name="battery_health_title">Kesehatan baterai</string>
+    <string name="battery_health_summary">Pantau kesehatan baterai perangkat Anda</string>
+    <string name="current_battery_capacity">Kapasitas baterai saat ini</string>
+    <string name="current_battery_capacity_summary">Kapasitas baterai saat ini diukur dengan kernel</string>
+    <string name="designed_battery_capacity">Kapasitas baterai yang dirancang</string>
+    <string name="designed_battery_capacity_summary">Kapasitas baterai yang dirancang oleh pabrikan</string>
 </resources>
