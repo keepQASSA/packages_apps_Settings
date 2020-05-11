@@ -47,4 +47,8 @@
     -->
     <bool name="config_supportsRefreshRateSwitch">true</bool>
 
+    <!-- Battery Health -->
+    <string name="config_batCurCap"></string>
+    <string name="config_batDesCap"></string>
+
 </resources>
