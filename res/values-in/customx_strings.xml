@@ -266,4 +266,5 @@
     <string name="current_battery_capacity_summary">Kapasitas baterai saat ini diukur dengan kernel</string>
     <string name="designed_battery_capacity">Kapasitas baterai yang dirancang</string>
     <string name="designed_battery_capacity_summary">Kapasitas baterai yang dirancang oleh pabrikan</string>
+    <string name="battery_charge_cycles">Siklus Pengisian Daya Selesai</string>
 </resources>
