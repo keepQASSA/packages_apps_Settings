@@ -497,4 +497,7 @@ Notifications may be delayed for these apps."</string>
     <string name="battery_stats_reset">Reset stats</string>
     <string name="battery_stats_message">Battery history stats are going to be reset</string>
 
+    <!-- A2DP codec priority -->
+    <string name="a2dp_source_codec_priority_title">Bluetooth Audio Codec (preferred)</string>
+
 </resources>
