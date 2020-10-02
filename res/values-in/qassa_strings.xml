@@ -445,4 +445,19 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="wifi_timeout_summary_2hours">2 jam</string>
     <string name="wifi_timeout_summary_4hours">4 jam</string>
     <string name="wifi_timeout_summary_8hours">8 jam</string>
+    <string name="bluetooth_timeout">Waktu Bluetooth habis</string>
+    <string name="bluetooth_timeout_summary">Bluetooth akan mati setelah <xliff:g id="timeout_description">%1$s</xliff:g> jika tidak ada perangkat yang terhubung</string>
+    <string name="bluetooth_timeout_summary2">Jangan mematikan Bluetooth secara otomatis</string>
+    <string name="bluetooth_timeout_summary_never">Tidak pernah</string>
+    <string name="bluetooth_timeout_summary_15secs">15 detik</string>
+    <string name="bluetooth_timeout_summary_30secs">30 detik</string>
+    <string name="bluetooth_timeout_summary_1min">1 menit</string>
+    <string name="bluetooth_timeout_summary_2mins">2 menit</string>
+    <string name="bluetooth_timeout_summary_5mins">5 menit</string>
+    <string name="bluetooth_timeout_summary_10mins">10 menit</string>
+    <string name="bluetooth_timeout_summary_30mins">30 menit</string>
+    <string name="bluetooth_timeout_summary_1hour">1 jam</string>
+    <string name="bluetooth_timeout_summary_2hours">2 jam</string>
+    <string name="bluetooth_timeout_summary_4hours">4 jam</string>
+    <string name="bluetooth_timeout_summary_8hours">8 jam</string>
 </resources>
