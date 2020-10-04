@@ -379,7 +379,6 @@
         <!-- Runs in the phone process since it needs access to UiccController -->
         <activity android:name="Settings$ApnSettingsActivity"
                 android:label="@string/apn_settings"
-                android:launchMode="singleTask"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:parentActivityName="Settings$NetworkDashboardActivity"
                 android:process="com.android.phone">
