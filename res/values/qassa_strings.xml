@@ -435,8 +435,8 @@ Notifications may be delayed for these apps."</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">Total RAM</string>
 
-    <!-- Device Codename -->
-    <string name="about_device_name">Device codename</string>
+    <!-- Device -->
+    <string name="about_device_name">Device</string>
 
     <!-- About phone screen, build date -->
     <string name="build_date">Build date</string>
