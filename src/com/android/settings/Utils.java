@@ -130,6 +130,8 @@ public final class Utils extends com.android.settingslib.Utils {
     public static final String PROPERTY_DEVICE_IDENTIFIER_ACCESS_RESTRICTIONS_DISABLED =
             "device_identifier_access_restrictions_disabled";
 
+    public static final String PIN_PASSWORD_LENGTH = "lockscreen.pin_password_length";
+
     /**
      * Finds a matching activity for a preference's intent. If a matching
      * activity is not found, it will remove the preference.
@@ -1058,6 +1060,27 @@ public final class Utils extends com.android.settingslib.Utils {
 
         if (lifecycle != null && scrollView != null) {
             ActionBarShadowController.attachToView(activity, lifecycle, scrollView);
+        }
+    }
+
+    public static int getPINPasswordLength(LockPatternUtils lockPatternUtils, int userId) {
+        int pinLength = 0;
+        try {
+            pinLength = (int) lockPatternUtils.getLockSettings().getLong(PIN_PASSWORD_LENGTH, 0, userId);
+        } catch (Exception e) {
+            Log.d("getPINPasswordLength", "getLong error: " + e.getMessage());
+        }
+        if (pinLength >= 4) {
+            return pinLength;
+        }
+        return 0;
+    }
+
+    public static void savePINPasswordLength(LockPatternUtils lockPatternUtils, int length, int userId) {
+        try {
+            lockPatternUtils.getLockSettings().setLong(PIN_PASSWORD_LENGTH, (long) length, userId);
+        } catch (Exception e) {
+            Log.d("savePINPasswordLength", "saveLong error: " + e.getMessage());
         }
     }
 
