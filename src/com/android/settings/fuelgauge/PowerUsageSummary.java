@@ -81,6 +81,9 @@ import java.util.Collections;
 import java.util.List;
 
 import com.keepqassa.settings.preferences.SystemSettingMasterSwitchPreference;
+
+import com.android.settings.fuelgauge.WaveLoadingView;
+
 /**
  * Displays a list of apps and subsystems that consume power, ordered by how much power was
  * consumed since the last time it was unplugged.
@@ -214,6 +217,11 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                 .findViewById(R.id.battery_header_icon);
         final TextView percentRemaining =
                 mBatteryLayoutPref.findViewById(R.id.battery_percent);
+
+        final WaveLoadingView mywave = (WaveLoadingView) mBatteryLayoutPref
+                  .findViewById(R.id.myWave);
+            mywave.setWaterLevelRatio(0f);
+
         final TextView summary1 = mBatteryLayoutPref.findViewById(R.id.summary1);
         BatteryInfo oldInfo = batteryInfos.get(0);
         BatteryInfo newInfo = batteryInfos.get(1);
@@ -230,6 +238,8 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                         PowerUtil.convertUsToMs(newInfo.remainingTimeUs)));
         summary1.setText(OldEstimateString + "\n" + NewEstimateString);
 
+        mywave.setWaterLevelRatio(0f);
+	mywave.setProgressValue(oldInfo.batteryLevel);
         batteryView.setBatteryLevel(oldInfo.batteryLevel);
         batteryView.setCharging(!oldInfo.discharging);
     }
@@ -525,13 +535,33 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
 
     @VisibleForTesting
     void initHeaderPreference() {
+        int animDur = 5000;
+	if (mBatteryLevel > 0 && mBatteryLevel <= 30)
+            animDur = 2500;
+        else if (mBatteryLevel > 30 && mBatteryLevel <= 65)
+            animDur = 3500;
+
         final BatteryMeterView batteryView = (BatteryMeterView) mBatteryLayoutPref
                 .findViewById(R.id.battery_header_icon);
         final TextView timeText = (TextView) mBatteryLayoutPref.findViewById(R.id.battery_percent);
 
+        final WaveLoadingView mywave = (WaveLoadingView) mBatteryLayoutPref
+                  .findViewById(R.id.myWave);
+
         batteryView.setBatteryLevel(mBatteryLevel);
         batteryView.setPowerSave(mPowerManager.isPowerSaveMode());
-        timeText.setText(formatBatteryPercentageText(mBatteryLevel));
+
+        mywave.setWaterLevelRatio(0f);
+        mywave.setProgressValue(mBatteryLevel);
+	mywave.setAnimDuration(4000);
+
+	//new Handler().postDelayed(() -> mywave.setProgressValue(mBatteryLevel), animDur-500);
+        ValueAnimator animator = ValueAnimator.ofInt(0, mBatteryLevel);
+        animator.setDuration(animDur);
+        animator.addUpdateListener(animation -> {
+            timeText.setText(String.format("%s%%", animation.getAnimatedValue().toString()));
+        });
+        animator.start();
     }
 
     @VisibleForTesting
@@ -540,6 +570,10 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         mBatteryLevel = currentLevel;
         final int diff = Math.abs(prevLevel - currentLevel);
         if (diff != 0) {
+            final WaveLoadingView mywave = (WaveLoadingView) mBatteryLayoutPref
+                  .findViewById(R.id.myWave);
+            mywave.setWaterLevelRatio(0f);
+
             final ValueAnimator animator = ValueAnimator.ofInt(prevLevel, currentLevel);
             animator.setDuration(BATTERY_ANIMATION_DURATION_MS_PER_LEVEL * diff);
             animator.setInterpolator(AnimationUtils.loadInterpolator(getContext(),
@@ -551,6 +585,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                     batteryView.setBatteryLevel(level);
                     batteryView.setPowerSave(mPowerManager.isPowerSaveMode());
                     timeTextView.setText(formatBatteryPercentageText(level));
+                    mywave.setProgressValue(level);
                 }
             });
             animator.start();

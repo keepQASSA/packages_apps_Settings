@@ -17,6 +17,7 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:id="@+id/battery_entity_header"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -45,12 +46,45 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:minLines="3"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"/>
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
             android:textColor="?android:attr/textColorPrimary"/>
 
     </LinearLayout>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="15dp"
+            android:background="@drawable/rect2"
+	    android:visibility="gone"
+            android:translationY="2dp"
+            settings:layout_constraintBottom_toTopOf="@id/myWave"
+            settings:layout_constraintEnd_toEndOf="parent"
+            settings:layout_constraintStart_toStartOf="@+id/myWave" />
+
+        <com.android.settings.fuelgauge.WaveLoadingView
+            android:id="@+id/myWave"
+            android:layout_width="75dp"
+            android:background="@drawable/rect"
+            android:layout_height="120dp"
+            settings:layout_constraintBottom_toBottomOf="parent"
+            settings:layout_constraintEnd_toEndOf="parent"
+            settings:wlv_borderWidth="10dp"
+            settings:wlv_round_rectangle="true"
+            settings:wlv_round_rectangle_x_and_y="20"
+            settings:wlv_shapeType="rectangle"
+            settings:wlv_waveAmplitude="30"
+	    settings:wlv_borderColor="@android:color/transparent"
+            settings:wlv_waveColor="?android:attr/colorAccent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <com.android.settings.fuelgauge.BatteryMeterView
+	android:visibility="gone"
         android:id="@+id/battery_header_icon"
         android:layout_width="match_parent"
         android:layout_height="@dimen/battery_meter_height"

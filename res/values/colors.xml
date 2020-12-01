@@ -151,4 +151,6 @@
     <color name="face_intro_outline">#ffdadce0</color>
 
     <color name="color_bw">#FF000000</color>
+
+    <color name="black">#171717</color>
 </resources>

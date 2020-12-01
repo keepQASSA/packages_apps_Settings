@@ -33,4 +33,6 @@
     <color name="color_bw">#FFFFFFFF</color>
 
     <color name="homepage_keepqassa_background">@*android:color/accent_device_default_dark</color>
+
+    <color name="black">#FAFAFA</color>
 </resources>
