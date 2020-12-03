@@ -556,26 +556,26 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
 	mywave.setAnimDuration(4000);
 
 	//new Handler().postDelayed(() -> mywave.setProgressValue(mBatteryLevel), animDur-500);
-        ValueAnimator animator = ValueAnimator.ofInt(0, mBatteryLevel);
+        /*ValueAnimator animator = ValueAnimator.ofInt(0, mBatteryLevel);
         animator.setDuration(animDur);
         animator.addUpdateListener(animation -> {
             timeText.setText(String.format("%s%%", animation.getAnimatedValue().toString()));
         });
-        animator.start();
+        animator.start();*/
     }
 
     @VisibleForTesting
     void startBatteryHeaderAnimationIfNecessary(BatteryMeterView batteryView, TextView timeTextView,
             int prevLevel, int currentLevel) {
         mBatteryLevel = currentLevel;
-        final int diff = Math.abs(prevLevel - currentLevel);
+        final int diff = Math.abs(0 - currentLevel);
         if (diff != 0) {
             final WaveLoadingView mywave = (WaveLoadingView) mBatteryLayoutPref
                   .findViewById(R.id.myWave);
             mywave.setWaterLevelRatio(0f);
 
-            final ValueAnimator animator = ValueAnimator.ofInt(prevLevel, currentLevel);
-            animator.setDuration(BATTERY_ANIMATION_DURATION_MS_PER_LEVEL * diff);
+            final ValueAnimator animator = ValueAnimator.ofInt(prevLevel, currentLevel);animator.setDuration(1000);
+            //animator.setDuration(BATTERY_ANIMATION_DURATION_MS_PER_LEVEL * diff);
             animator.setInterpolator(AnimationUtils.loadInterpolator(getContext(),
                     android.R.interpolator.fast_out_slow_in));
             animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
