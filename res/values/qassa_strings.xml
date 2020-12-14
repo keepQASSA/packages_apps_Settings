@@ -464,8 +464,9 @@ Notifications may be delayed for these apps."</string>
     <string name="back_gesture_arrow_message">Show an animated arrow for back gesture.</string>
 
     <!-- Battery stats reset -->
-    <string name="battery_stats_reset">Reset stats</string>
-    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+    <string name="battery_stats_reset">Clear usage data?</string>
+    <string name="battery_stats_message">Battery usage data will be lost</string>
+    <string name="battery_stats_clear">@string/proxy_clear_text</string>
 
     <!-- A2DP codec priority -->
     <string name="a2dp_source_codec_priority_title">Bluetooth Audio Codec (preferred)</string>
