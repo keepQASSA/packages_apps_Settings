@@ -58,6 +58,8 @@
 
     <attr name="footerPreferenceStyle" format="reference" />
 
+    <attr name="maxLines" format="integer" min="0" />
+
     <declare-styleable name="FixedLineSummaryPreference">
         <attr name="summaryLineCount" format="integer" />
     </declare-styleable>
