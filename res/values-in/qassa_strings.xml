@@ -366,4 +366,6 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="adaptive_playback_timeout_5_min_summary">Aktif (5 menit)</string>
     <string name="adaptive_playback_timeout_10_min">10 menit</string>
     <string name="adaptive_playback_timeout_10_min_summary">Aktif (10 menit)</string>
+    <string name="ambient_battery_percent_title">Level baterai di bagian bawah</string>
+    <string name="ambient_battery_percent_summary">Aktifkan untuk menampilkan persen baterai saat tertidur</string>
 </resources>

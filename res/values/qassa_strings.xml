@@ -559,4 +559,8 @@ Notifications may be delayed for these apps."</string>
     <string name="adaptive_playback_timeout_5_min_summary">On (5 minutes)</string>
     <string name="adaptive_playback_timeout_10_min">10 minutes</string>
     <string name="adaptive_playback_timeout_10_min_summary">On (10 minutes)</string>
+
+    <!-- Ambient display battery percentage --> 
+    <string name="ambient_battery_percent_title">Battery level on bottom</string> 
+    <string name="ambient_battery_percent_summary">Enable to show battery percent while dozing</string>
 </resources>
