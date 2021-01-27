@@ -336,4 +336,6 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="changelog_summary">Perubahan Terbaru</string>
     <string name="changelog_loading">Memuat changelog\u2026</string>
     <string name="changelog_error">Tidak dapat memuat changelog</string>
+    <string name="wifi_tether_client_list_title">Daftar Klien</string>
+    <string name="wifi_tether_client_list_summary">Kelola klien yang terhubung ke hotspot</string>
 </resources>
