@@ -22,4 +22,8 @@
         <attr name="defaultValuePure" format="float" />
         <attr name="digits" format="integer" />
     </declare-styleable>
+
+    <attr name="appBarLayoutStyle" format="reference" />
+    <attr name="maxLines" format="integer" />
+    <attr name="statusBarForeground" format="color" />
 </resources>
