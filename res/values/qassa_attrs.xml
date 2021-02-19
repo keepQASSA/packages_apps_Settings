@@ -256,4 +256,5 @@
         <attr name="wlv_titleCenterStrokeWidth" format="dimension"/>
     </declare-styleable>
 
+    <attr name="maxLines" format="integer" />
 </resources>
