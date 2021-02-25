@@ -430,4 +430,19 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="xd_gpu">GPU</string>
     <string name="xd_camera_mp">Kamera</string>
     <string name="xd_screen_type">Layar</string>
+    <string name="wifi_timeout">Matikan Wi-Fi secara otomatis</string>
+    <string name="wifi_timeout_summary">Wi-Fi akan mati setelah <xliff:g id="timeout_description">%1$s</xliff:g> jika tidak ada jaringan yang terhubung</string>
+    <string name="wifi_timeout_summary2">Dinonaktifkan</string>
+    <string name="wifi_timeout_summary_never">Tidak pernah</string>
+    <string name="wifi_timeout_summary_15secs">15 detik</string>
+    <string name="wifi_timeout_summary_30secs">30 detik</string>
+    <string name="wifi_timeout_summary_1min">1 menit</string>
+    <string name="wifi_timeout_summary_2mins">2 menit</string>
+    <string name="wifi_timeout_summary_5mins">5 menit</string>
+    <string name="wifi_timeout_summary_10mins">10 menit</string>
+    <string name="wifi_timeout_summary_30mins">30 menit</string>
+    <string name="wifi_timeout_summary_1hour">1 jam</string>
+    <string name="wifi_timeout_summary_2hours">2 jam</string>
+    <string name="wifi_timeout_summary_4hours">4 jam</string>
+    <string name="wifi_timeout_summary_8hours">8 jam</string>
 </resources>
