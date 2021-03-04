@@ -21,6 +21,13 @@
     android:title="@string/network_dashboard_title"
     settings:initialExpandedChildrenCount="8">
 
+    <Preference
+        android:layout="@layout/custom_header"
+        android:title="@string/top_network_title"
+        android:order="-45"
+        settings:allowDividerBelow="false"
+        android:selectable="false"/>
+
     <com.android.settings.widget.MasterSwitchPreference
         android:fragment="com.android.settings.wifi.WifiSettings"
         android:key="toggle_wifi"

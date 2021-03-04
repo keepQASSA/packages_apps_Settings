@@ -51,6 +51,7 @@ package com.android.settings.connecteddevice;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.net.Uri;
+import android.os.Bundle;
 import android.provider.DeviceConfig;
 import android.provider.SearchIndexableResource;
 import android.text.TextUtils;
@@ -123,6 +124,12 @@ public class ConnectedDeviceDashboardFragment extends DashboardFragment {
         }
 
         return controllers;
+    }
+
+    @Override
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+        getActivity().getActionBar().setTitle(" ");
     }
 
     @Override

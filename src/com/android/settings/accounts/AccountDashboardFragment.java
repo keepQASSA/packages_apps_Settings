@@ -19,6 +19,7 @@ import static android.provider.Settings.EXTRA_AUTHORITIES;
 
 import android.app.settings.SettingsEnums;
 import android.content.Context;
+import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 
 import com.android.settings.R;
@@ -59,6 +60,12 @@ public class AccountDashboardFragment extends DashboardFragment {
     @Override
     public int getHelpResource() {
         return R.string.help_url_user_and_account_dashboard;
+    }
+
+    @Override
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+        getActivity().getActionBar().setTitle(" ");
     }
 
     @Override

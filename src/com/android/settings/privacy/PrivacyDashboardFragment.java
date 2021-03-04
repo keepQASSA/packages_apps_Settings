@@ -18,6 +18,7 @@ package com.android.settings.privacy;
 
 import android.app.settings.SettingsEnums;
 import android.content.Context;
+import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 import android.view.View;
 
@@ -66,6 +67,12 @@ public class PrivacyDashboardFragment extends DashboardFragment {
     @Override
     public int getHelpResource() {
         return R.string.help_url_privacy_dashboard;
+    }
+
+    @Override
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+        getActivity().getActionBar().setTitle(" ");
     }
 
     @Override

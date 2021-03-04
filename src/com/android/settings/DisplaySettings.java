@@ -87,6 +87,7 @@ public class DisplaySettings extends DashboardFragment {
         if (!mThemeCustomization) {
             prefScreen.removePreference(perfCat);
         }
+        getActivity().getActionBar().setTitle(" ");
     }
 
     @Override

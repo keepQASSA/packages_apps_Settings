@@ -22,6 +22,7 @@ import android.content.pm.UserInfo;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.provider.SearchIndexableResource;
+import android.os.Bundle;
 
 import com.android.settings.R;
 import com.android.settings.bluetooth.BluetoothFilesPreferenceController;
@@ -66,6 +67,12 @@ public class AdvancedConnectedDeviceDashboardFragment extends DashboardFragment 
     @Override
     protected int getPreferenceScreenResId() {
         return R.xml.connected_devices_advanced;
+    }
+
+    @Override
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+        getActivity().getActionBar().setTitle(" ");
     }
 
     @Override

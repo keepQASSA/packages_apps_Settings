@@ -20,6 +20,7 @@ import static com.android.settings.network.MobilePlanPreferenceController.MANAGE
 import android.app.Dialog;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
+import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 import android.util.Log;
 
@@ -80,6 +81,12 @@ public class NetworkDashboardFragment extends DashboardFragment implements
     @Override
     public int getHelpResource() {
         return R.string.help_url_network_dashboard;
+    }
+
+    @Override
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+        getActivity().getActionBar().setTitle(" ");
     }
 
     @Override

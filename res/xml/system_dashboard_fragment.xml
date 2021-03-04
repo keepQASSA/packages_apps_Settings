@@ -22,6 +22,12 @@
     settings:initialExpandedChildrenCount="6">
 
     <Preference
+        android:layout="@layout/custom_header"
+        android:order="-270"
+        android:title="@string/top_system_title"
+        android:selectable="false"/>
+
+    <Preference
         android:key="reset_dashboard"
         android:title="@string/reset_dashboard_title"
         android:summary="@string/reset_dashboard_summary"

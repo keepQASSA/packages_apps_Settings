@@ -22,6 +22,12 @@
         android:persistent="true">
 
     <Preference
+        android:layout="@layout/custom_header"
+        settings:allowDividerBelow="false"
+        android:title="@string/top_accessibility_title"
+        android:selectable="false"/>
+
+    <Preference
             android:key="accessibility_shortcut_preference"
             android:fragment="com.android.settings.accessibility.AccessibilityShortcutPreferenceFragment"
             android:title="@string/accessibility_global_gesture_preference_title"/>
@@ -37,6 +43,8 @@
 
         <Preference
                 android:key="tts_settings_preference"
+                settings:allowDividerBelow="false"
+                settings:allowDividerAbove="false"
                 android:fragment="com.android.settings.tts.TextToSpeechSettings"
                 android:title="@string/tts_settings_title"
                 settings:searchable="false"/>

@@ -300,6 +300,7 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
         initializeAllPreferences();
         mDpm = (DevicePolicyManager) (getActivity()
                 .getSystemService(Context.DEVICE_POLICY_SERVICE));
+        getActivity().getActionBar().setTitle(" ");
     }
 
     @Override
