@@ -320,9 +320,14 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="applock_unlocked">Tidak terkunci</string>
     <string name="applock_locked_apps">Aplikasi terkunci</string>
     <string name="applock_unlocked_apps">Aplikasi tidak terkunci</string>
-    <string name="applock_show_only_on_wake">Otentikasi hanya sekali</string>
-    <string name="applock_show_only_on_wake_on_summary">Setelah diautentikasi, aplikasi tetap tidak terkunci hingga layar mati</string>
-    <string name="applock_show_only_on_wake_off_summary">Setelah diautentikasi, aplikasi tetap terbuka kuncinya selama 15 detik setelah keluar</string>
+    <string name="applock_lock_after_title">Buka waktu tunggu habis</string>
+    <string name="applock_lock_after_instantly">Seketika</string>
+    <string name="applock_lock_after_15_seconds">15 Detik</string>
+    <string name="applock_lock_after_screen_off">Layar mati</string>
+    <string name="applock_lock_after_summary">Aplikasi akan dikunci setelah batas waktu yang dipilih</string>
+    <string name="applock_lock_after_instantly_summary">Aplikasi akan langsung terkunci saat ditutup</string>
+    <string name="applock_lock_after_15_seconds_summary">Aplikasi akan dikunci 15 detik setelah ditutup</string>
+    <string name="applock_lock_after_screen_off_summary">Aplikasi akan dikunci saat layar dimatikan</string>
     <string name="applock_notification_info">Anda dapat menampilkan/menyembunyikan konten notifikasi per aplikasi dengan mengeklik ikon notifikasi yang ditampilkan di setiap preferensi aplikasi yang dikunci</string>
     <string name="applock_show_notif">Menampilkan konten notifikasi</string>
     <string name="applock_hide_notif">Menyembunyikan konten notifikasi</string>
