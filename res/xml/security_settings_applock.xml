@@ -19,7 +19,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/applock_title">
 
-    <ListPreference
+    <DropDownPreference
         android:key="applock_lock_after"
         android:defaultValue="0"
         android:entries="@array/applock_lock_after_entries"
