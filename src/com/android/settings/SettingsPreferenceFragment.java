@@ -62,6 +62,8 @@ import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import java.util.UUID;
 
+import com.revengeos.revengeui.recyclerview.BounceEdgeEffectFactory;
+
 /**
  * Base class for Settings fragments, with some helper functions and dialog management.
  */
@@ -159,6 +161,7 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
         final View root = super.onCreateView(inflater, container, savedInstanceState);
         mPinnedHeaderFrameLayout = root.findViewById(R.id.pinned_header);
         mButtonBar = root.findViewById(R.id.button_bar);
+        getListView().setEdgeEffectFactory(new BounceEdgeEffectFactory());
         return root;
     }
 
