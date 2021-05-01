@@ -267,4 +267,6 @@
     <string name="use_stream_spoof_summary">Spoof device mu ke Pixel 6 Pro untuk membuka kualitas tinggi di Amazon Prime, Disney+, Hotstar, dan Netflix</string>
     <string name="statusbar_icons_style">Notifikasi statusbar berwarna</string>
     <string name="statusbar_icons_style_summary">Aktifkan Notifikasi statusbar berwarna (butuh restart SystemUI)</string>
+    <string name="header_icons_style">Notifikasi QS Headers berwarna</string>
+    <string name="header_icons_style_summary">Aktifkan Notifikasi QS headers berwarna (butuh restart SystemUI)</string>
 </resources>

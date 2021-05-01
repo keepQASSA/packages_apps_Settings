@@ -35,6 +35,12 @@
     <PreferenceCategory
         android:title="@string/general_qs_title">
 
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="headers_icons_style"
+            android:title="@string/header_icons_style"
+            android:summary="@string/header_icons_style_summary"
+            android:defaultValue="true" />
+
         <com.android.settings.custom.preference.SystemSettingListPreference
             android:key="qs_quick_pulldown"
             android:title="@string/status_bar_quick_qs_pulldown_title"

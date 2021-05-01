@@ -498,7 +498,9 @@ Notifications may be delayed for these apps."</string>
     <string name="use_stream_spoof_title">Unlock higher quality streams</string>
     <string name="use_stream_spoof_summary">Spoof your device as Pixel 6 Pro to unlock higher quality streams on Amazon Prime, Disney+, Hotstar, and Netflix</string>
 
-    <!-- Colored Statusbar Icons -->
+    <!-- Colored Statusbar & Header Icons -->
     <string name="statusbar_icons_style">Colored Statusbar Notification Icons</string>
     <string name="statusbar_icons_style_summary">Choose the style of your statusbar notification icons (requires SystemUI restart)</string>
+    <string name="header_icons_style">Colored Notification Headers Icons</string>
+    <string name="header_icons_style_summary">Choose the style of your notification headers icons (requires SystemUI restart)</string>
 </resources>
