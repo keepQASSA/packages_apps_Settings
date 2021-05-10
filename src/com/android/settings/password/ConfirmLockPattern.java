@@ -100,6 +100,8 @@ public class ConfirmLockPattern extends ConfirmDeviceCredentialBaseActivity {
         private AppearAnimationUtils mAppearAnimationUtils;
         private DisappearAnimationUtils mDisappearAnimationUtils;
 
+        private byte mPatternSize;
+
         // required constructor for fragments
         public ConfirmLockPatternFragment() {
 
@@ -121,6 +123,7 @@ public class ConfirmLockPattern extends ConfirmDeviceCredentialBaseActivity {
             mErrorTextView = (TextView) view.findViewById(R.id.errorText);
             mLeftSpacerLandscape = view.findViewById(R.id.leftSpacer);
             mRightSpacerLandscape = view.findViewById(R.id.rightSpacer);
+            mPatternSize = mLockPatternUtils.getLockPatternSize(mEffectiveUserId);
 
             // make it so unhandled touch events within the unlock screen go to the
             // lock pattern view.
@@ -134,14 +137,14 @@ public class ConfirmLockPattern extends ConfirmDeviceCredentialBaseActivity {
                         ConfirmDeviceCredentialBaseFragment.HEADER_TEXT);
                 mDetailsText = intent.getCharSequenceExtra(
                         ConfirmDeviceCredentialBaseFragment.DETAILS_TEXT);
+                mPatternSize = intent.getByteExtra("pattern_size", mPatternSize);
             }
 
             mLockPatternView.setTactileFeedbackEnabled(
                     mLockPatternUtils.isTactileFeedbackEnabled());
             mLockPatternView.setInStealthMode(!mLockPatternUtils.isVisiblePatternEnabled(
                     mEffectiveUserId));
-            mLockPatternView.setLockPatternSize(
-                    mLockPatternUtils.getLockPatternSize(mEffectiveUserId));
+            mLockPatternView.setLockPatternSize(mPatternSize);
             mLockPatternView.setOnPatternListener(mConfirmExistingLockPatternListener);
             updateStage(Stage.NeedToUnlock);
 

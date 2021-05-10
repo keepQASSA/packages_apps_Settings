@@ -418,7 +418,9 @@ public final class ChooseLockSettingsHelper {
         switch (mLockPatternUtils.getKeyguardStoredPasswordQuality(effectiveUserId)) {
             case DevicePolicyManager.PASSWORD_QUALITY_SOMETHING:
                 launched = launchConfirmationActivity(request, title, header, description,
-                        returnCredentials || hasChallenge
+                        userId == LockPatternUtils.USER_FRP
+                                ? ChooseLockPatternSize.class
+                                : returnCredentials || hasChallenge
                                 ? ConfirmLockPattern.InternalActivity.class
                                 : ConfirmLockPattern.class, returnCredentials, external,
                                 hasChallenge, challenge, userId, alternateButton, extras,
@@ -465,6 +467,10 @@ public final class ChooseLockSettingsHelper {
             intent.putExtras(extras);
         }
         intent.setClassName(SETTINGS_PACKAGE_NAME, activityClass.getName());
+        if (userId == LockPatternUtils.USER_FRP) {
+            intent.putExtra("className", ConfirmLockPattern.class.getName());
+        }
+
         if (external) {
             intent.addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
             if (mFragment != null) {
