@@ -521,4 +521,9 @@ Notifications may be delayed for these apps."</string>
 
     <!-- Density category -->
     <string name="density_category">Density options</string>
+
+    <!-- One shot automatic Brightness -->
+    <string name="auto_brightness_one_shot_title">One shot auto-brightness</string>
+    <string name="auto_brightness_one_shot_summary">Brightness adjustment will only occur at the moment the screen is turned on</string>
+
 </resources>
