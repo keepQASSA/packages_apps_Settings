@@ -88,7 +88,7 @@
         settings:controller="com.android.settings.notification.NotificationVolumePreferenceController"/>
 
     <!-- Link ringtone and notification volumes -->
-    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+    <com.keepqassa.settings.preferences.SystemSettingSwitchPreference
         android:key="volume_link_notification"
         android:title="@string/volume_link_notification_title"
         android:defaultValue="true"
@@ -96,7 +96,7 @@
         settings:controller="com.android.settings.notification.LinkedVolumesPreferenceController"/>
 
     <!-- Increasing ring -->
-    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+    <com.keepqassa.settings.preferences.SystemSettingSwitchPreference
         android:key="increasing_ring"
         android:title="@string/increasing_ring_volume_option_title"
         android:order="-136"
@@ -203,7 +203,7 @@
           settings:keywords="@string/keywords_vibrate_on_touch"/>
 
         <!-- In-call feedback -->
-        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        <com.keepqassa.settings.preferences.SystemSettingSwitchPreference
           android:key="incall_feeedback_vibrate"
           android:title="@string/incall_feeedback_vibrate_title"
           android:defaultValue="false"

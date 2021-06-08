@@ -67,7 +67,7 @@ public abstract class ToggleFeaturePreferenceFragment extends SettingsPreference
             PreferenceScreen preferenceScreen = getPreferenceScreen();
             Preference settingsPref = new Preference(preferenceScreen.getContext());
             settingsPref.setTitle(mSettingsTitle);
-            settingsPref.setIconSpaceReserved(true);
+            settingsPref.setIconSpaceReserved(false);
             settingsPref.setIntent(mSettingsIntent);
             preferenceScreen.addPreference(settingsPref);
         }

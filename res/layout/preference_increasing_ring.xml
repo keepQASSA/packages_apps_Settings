@@ -25,7 +25,7 @@
     android:background="?android:attr/selectableItemBackground"
     android:clipToPadding="false">
 
-    <LinearLayout
+<!--    <LinearLayout
         android:id="@+id/icon_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:maxWidth="48dp"
             android:maxHeight="48dp"/>
-    </LinearLayout>
+    </LinearLayout>-->
 
     <RelativeLayout
         android:layout_width="wrap_content"
