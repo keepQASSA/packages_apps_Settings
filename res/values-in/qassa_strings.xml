@@ -380,4 +380,6 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="search">Mencari</string>
     <string name="low_battery_light_title">Lampu baterai lemah</string>
     <string name="low_battery_light_summary">LED berkedip saat baterai hampir habis</string>
+    <string name="high_touch_polling_rate_title">Tingkat polling sentuhan tinggi</string>
+    <string name="high_touch_polling_rate_summary">Tingkatkan rasio polling layar sentuh</string>
 </resources>

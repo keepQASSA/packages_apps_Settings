@@ -589,4 +589,8 @@ Notifications may be delayed for these apps."</string>
     <string name="low_battery_light_title">Low battery light</string>
     <string name="low_battery_light_summary">Blink LED when battery is low</string>
 
+    <!-- High touch polling rate -->
+    <string name="high_touch_polling_rate_title">High touch polling rate</string>
+    <string name="high_touch_polling_rate_summary">Increase touchscreen polling rate</string>
+
 </resources>

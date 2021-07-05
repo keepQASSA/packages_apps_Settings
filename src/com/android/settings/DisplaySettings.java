@@ -53,6 +53,7 @@ public class DisplaySettings extends DashboardFragment {
 
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_HIGH_TOUCH_SENSITIVITY = "high_touch_sensitivity_enable";
+    private static final String KEY_HIGH_TOUCH_POLLING_RATE = "high_touch_polling_rate_enable";
 
     private boolean mThemeCustomization;
 
@@ -139,6 +140,10 @@ public class DisplaySettings extends DashboardFragment {
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
                     LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
+                    if (!hardware.isSupported(
+                            LineageHardwareManager.FEATURE_HIGH_TOUCH_POLLING_RATE)) {
+                        keys.add(KEY_HIGH_TOUCH_POLLING_RATE);
+                    }
                     if (!hardware.isSupported(
                             LineageHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY)) {
                         keys.add(KEY_HIGH_TOUCH_SENSITIVITY);
