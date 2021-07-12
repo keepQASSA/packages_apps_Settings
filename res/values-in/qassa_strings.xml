@@ -389,4 +389,5 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="notification_battery_charge_level_seek_bar">Level baterai</string>
     <string name="notification_battery_charge_level_ringtone">Nada Dering</string>
     <string name="notification_battery_charge_level_silent">Senyap</string>
+    <string name="xd_firmware_info">Tentang perangkat lunak</string>
 </resources>

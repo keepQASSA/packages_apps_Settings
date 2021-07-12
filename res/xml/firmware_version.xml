@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Copyright (C) 2019 The Android Open Source Project
+  Copyright (C) 2021 xdroid, xyzprjkt°
+
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -19,12 +21,27 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="firmware_version_screen"
-    android:title="@string/firmware_version"
+    android:title=" "
     settings:keywords="@string/keywords_android_version">
+
+    <!-- xd. fake toolbar -->
+    <Preference
+        android:title="@string/xd_firmware_info"
+        android:key="xd_action_bar"
+        android:layout="@layout/xd_action_bar"
+        android:selectable="false"/>
+
+    <!-- Firmware Category -->
+    <Preference
+        android:key="xd_category_firmware_version"
+        android:layout="@layout/xd_pref_category"
+        android:title="@string/xd_firmware_version_cat"
+        android:selectable="false"/>
 
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
+        android:layout="@layout/xd_pref_card_top"
         android:title="@string/firmware_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
@@ -33,6 +50,7 @@
     <!-- QASSA Version -->
     <Preference
         android:key="qassa_version"
+        android:layout="@layout/xd_pref_card_bot"
         android:title="@string/qassa_version_title"
         android:summary="@string/device_info_default"
         settings:enableCopying="true"
@@ -41,6 +59,7 @@
     <!-- QASSA maintainer -->
     <Preference
         android:key="maintainer"
+        android:layout="@layout/xd_pref_card_top"
         android:title="@string/maintainer"
         android:summary="@string/maintainer_name"
         settings:enableCopying="true" />
@@ -48,14 +67,23 @@
     <!-- Device Codename -->
     <Preference
         android:key="about_device_name"
+        android:layout="@layout/xd_pref_card_bot"
         android:title="@string/about_device_name"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
 
+    <!-- Security FW Category -->
+    <Preference
+        android:key="xd_category_firmware_security"
+        android:layout="@layout/xd_pref_category"
+        android:title="@string/xd_firmware_security_cat"
+        android:selectable="false"/>
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"
+        android:layout="@layout/xd_pref_card_sin"
         android:title="@string/security_patch"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
@@ -68,9 +96,17 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/>-->
 
+    <!-- General Category -->
+    <Preference
+        android:key="xd_category_general"
+        android:layout="@layout/xd_pref_category"
+        android:title="@string/xd_general_cat"
+        android:selectable="false"/>
+
     <!-- Baseband -->
     <Preference
         android:key="base_band"
+        android:layout="@layout/xd_pref_card_top"
         android:title="@string/baseband_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
@@ -79,6 +115,7 @@
     <!-- Kernel -->
     <Preference
         android:key="kernel_version"
+        android:layout="@layout/xd_pref_card_bot"
         android:title="@string/kernel_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
@@ -87,6 +124,7 @@
     <!-- Build date -->
     <Preference 
         android:key="build_date"
+        android:layout="@layout/xd_pref_card_top"
         android:title="@string/build_date"
         android:summary="@string/build_date_default"
         settings:enableCopying="true"
@@ -95,6 +133,7 @@
     <!-- Build -->
     <Preference
         android:key="os_build_number"
+        android:layout="@layout/xd_pref_card_bot"
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
@@ -103,6 +142,7 @@
     <!-- SELinux -->
     <Preference
         android:key="selinux_status"
+        android:layout="@layout/xd_pref_card_sin"
         android:title="@string/selinux_status"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="false"

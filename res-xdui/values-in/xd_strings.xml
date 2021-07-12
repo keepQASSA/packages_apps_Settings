@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2021 xdroid, xyzprjkt
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="xd_firmware_info">Informasi firmware</string>
+    <string name="xd_hardware_info">Informasi perangkat keras</string>
+    <string name="xd_about_phone">Tentang telepon</string>
+    <string name="xd_dashboard_greet">Apa yang Anda cari?</string>
+    <string name="xd_dashboard_device">Tentang ponsel</string>
+    <string name="xd_dashboard_account">Akun</string>
+    <string name="xd_dashboard_network">Internet</string>
+    <string name="xd_dashboard_conectivity">Konektivitas</string>
+    <string name="xd_dashboard_display">Tampilan</string>
+    <string name="xd_dashboard_battery">Baterai</string>
+    <string name="xd_dashboard_sound">Suara</string>
+    <string name="xd_dashboard_apps">Aplikasi</string>
+    <string name="xd_dashboard_storage">Penyimpanan</string>
+    <string name="xd_dashboard_privacy">Privasi</string>
+    <string name="xd_dashboard_location">Lokasi</string>
+    <string name="xd_dashboard_security">Keamanan</string>
+    <string name="xd_dashboard_accessibility">Aksesibilitas</string>
+    <string name="xd_dashboard_system">Lainnya</string>
+    <string name="xd_dashboard_support">Dukungan</string>
+    <string name="xd_firmware_info_summary">Informasi tentang firmware di ponsel ini</string>
+    <string name="xd_hardware_info_summary">Informasi tentang perangkat keras di ponsel ini</string>
+    <string name="xd_device_owner">Nama pemilik</string>
+    <string name="xd_legal_information_summary">Informasi hukum lisensi</string>
+    <string name="dark_ui_mode_summary">Aktifkan Tema Gelap di perangkat ini</string>
+    <string name="xd_about_phone_owner_cat">Informasi pemilik</string>
+    <string name="xd_about_phone_information_cat">Informasi perangkat</string>
+    <string name="xd_about_phone_legal_cat">Informasi Hukum</string>
+    <string name="xd_about_phone_network_cat">Informasi jaringan</string>
+    <string name="xd_firmware_version_cat">Versi firmware</string>
+    <string name="xd_firmware_security_cat">Keamanan firmware</string>
+    <string name="xd_general_cat">Umum</string>
+    <string name="xd_category_ui">Antarmuka pengguna</string>
+    <string name="xd_category_screen">Layar</string>
+    <string name="xd_category_density">Kepadatan</string>
+    <string name="xd_category_gesture">Gerakan layar</string>
+    <string name="xd_category_brightness">Kecerahan</string>
+    <string name="xd_device_name">Nama Perangkat</string>
+    <string name="xd_chipset_type">Chipset</string>
+    <string name="xd_gpu">GPU</string>
+    <string name="xd_camera_mp">Kamera</string>
+    <string name="xd_screen_type">Layar</string>
+</resources>
