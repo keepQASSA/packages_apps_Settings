@@ -57,7 +57,8 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     packages/apps/TouchGestures/res \
-    packages/apps/keepQASSA/res
+    packages/apps/keepQASSA/res \
+    $(LOCAL_PATH)/res-xdui
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
     --extra-packages com.keepqassa.settings
