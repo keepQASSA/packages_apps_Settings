@@ -601,4 +601,7 @@ Notifications may be delayed for these apps."</string>
     <string name="notification_battery_charge_level_seek_bar">Battery level</string>
     <string name="notification_battery_charge_level_ringtone">Ringtone</string>
     <string name="notification_battery_charge_level_silent">Silent</string>
+
+    <!-- xd. fake toolbar -->
+    <string name="xd_firmware_info">Firmware information</string>
 </resources>
