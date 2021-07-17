@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Copyright (C) 2019 The Android Open Source Project
+  Copyright (C) 2021 xdroid, xyzprjkt°
+
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -19,7 +21,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="firmware_version_screen"
-    android:title=""
+    android:title=" "
     settings:keywords="@string/keywords_android_version">
 
     <!-- xd. fake toolbar -->
@@ -27,6 +29,13 @@
         android:title="@string/xd_firmware_info"
         android:key="xd_action_bar"
         android:layout="@layout/xd_action_bar"
+        android:selectable="false"/>
+
+    <!-- Firmware Category -->
+    <Preference
+        android:key="xd_category_firmware_version"
+        android:layout="@layout/xd_pref_category"
+        android:title="@string/xd_firmware_version_cat"
         android:selectable="false"/>
 
     <!-- Android version -->
@@ -64,6 +73,13 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
 
+    <!-- Security FW Category -->
+    <Preference
+        android:key="xd_category_firmware_security"
+        android:layout="@layout/xd_pref_category"
+        android:title="@string/xd_firmware_security_cat"
+        android:selectable="false"/>
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"
@@ -79,6 +95,13 @@
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/>-->
+
+    <!-- General Category -->
+    <Preference
+        android:key="xd_category_general"
+        android:layout="@layout/xd_pref_category"
+        android:title="@string/xd_general_cat"
+        android:selectable="false"/>
 
     <!-- Baseband -->
     <Preference

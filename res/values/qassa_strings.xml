@@ -604,4 +604,22 @@ Notifications may be delayed for these apps."</string>
 
     <!-- xd. fake toolbar -->
     <string name="xd_firmware_info">Firmware information</string>
+    <string name="xd_hardware_info">Hardware information</string>
+    <string name="xd_about_phone">About phone</string>
+
+    <!-- xd. Preferences -->
+    <string name="xd_firmware_info_summary">Information about firmware in this phone</string>
+    <string name="xd_hardware_info_summary">Information about hardware in this phone</string>
+    <string name="xd_device_owner">Owner name</string>
+    <string name="xd_legal_information_summary">License legal information</string>
+    <string name="xd_regulatory_summary">Regulatory information</string>
+
+    <!-- xd. Preferences Category -->
+    <string name="xd_about_phone_owner_cat">Owner information</string>
+    <string name="xd_about_phone_information_cat">Device information</string>
+    <string name="xd_about_phone_legalregulator_cat">Legal information</string>
+    <string name="xd_about_phone_network_cat">Network information</string>    
+    <string name="xd_firmware_version_cat">Firmware version</string>
+    <string name="xd_firmware_security_cat">Firmware security</string>
+    <string name="xd_general_cat">General information</string>
 </resources>
