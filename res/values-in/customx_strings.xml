@@ -252,4 +252,6 @@
     <string name="heads_up_notifications_enabled_summary">Menampilkan pemberitahuan prioritas dalam jendela kecil yang mengambang</string>
     <string name="proximity_wake_title">Cegah bangun yang tak disengaja</string>
     <string name="proximity_wake_summary">Periksa sensor jarak sebelum membangunkan layar</string>
+    <string name="enable_clear_all_button">Ganti teks hapus notifkasi dengan tombol yang bagus</string>
+    <string name="enable_clear_all_button_summary">Tampilkan tombol hapus notifikasi yang baru</string>
 </resources>

@@ -104,6 +104,12 @@
     <PreferenceCategory
         android:title="@string/qs_title">
 
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="dismiss_all_button"
+            android:title="@string/enable_clear_all_button"
+            android:summary="@string/enable_clear_all_button_summary"
+            android:defaultValue="false" />
+
         <com.android.settings.custom.preference.SystemSettingListPreference
             android:key="qs_quick_pulldown"
             android:title="@string/status_bar_quick_qs_pulldown_title"
