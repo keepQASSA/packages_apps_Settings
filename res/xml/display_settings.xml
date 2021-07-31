@@ -201,30 +201,8 @@
         android:key="pocket_judge"
         android:title="@string/proximity_wake_title"
         android:summary="@string/proximity_wake_summary"
-        android:layout="@layout/xd_pref_card_bot" />     
-                      
-    <PreferenceCategory
-        android:key="theme_customization_category"
-        settings:allowDividerAbove="false"
-        android:title="@string/theme_customization_category"
-        android:layout="@layout/xd_pref_category"
-        android:order="1200"> <!-- Incremented by 100 from last order (i.e. 1100) -->
+        android:layout="@layout/xd_pref_card_bot" />
 
-        <ListPreference
-            android:key="android.theme.customization.accent_color"
-            android:title="@string/theme_customization_accent_color_title"
-            android:layout="@layout/xd_pref_card_top"/>
-        <ListPreference
-            android:key="android.theme.customization.font"
-            android:title="@string/theme_customization_font_title"
-            android:layout="@layout/xd_pref_card_mid"/>
-        <ListPreference
-            android:key="android.theme.customization.adaptive_icon_shape"
-            android:title="@string/theme_customization_icon_shape_title"
-            android:layout="@layout/xd_pref_card_bot"/>
-            
-    </PreferenceCategory>        
-    
     <Preference
         android:key="density_category"
         android:title="@string/xd_category_density"

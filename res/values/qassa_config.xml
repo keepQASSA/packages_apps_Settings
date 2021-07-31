@@ -56,5 +56,5 @@
     <bool name="config_agps_enabled">true</bool>
 
     <!-- Whether to enable ThemeCustomization -->
-    <bool name="config_enable_theme_customization">true</bool>
+    <bool name="config_enable_theme_customization">false</bool>
 </resources>
