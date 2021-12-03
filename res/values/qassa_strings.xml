@@ -582,4 +582,6 @@ Notifications may be delayed for these apps."</string>
 
     <!-- Summary for list to control apps that ignore battery saving restrictions -->
     <string name="high_power_apps_summary">Battery optimization availability</string>
+
+    <string name="search">Search</string>
 </resources>
