@@ -498,6 +498,11 @@ public class AppInfoDashboardFragment extends DashboardFragment
         return !packageName.contains("com.android") && !packageName.contains("org.chromium.webapk");
     }
 
+    @Override
+    protected boolean shouldSkipForInitialSUW() {
+        return true;
+    }
+
     private void uninstallPkg(String packageName, boolean allUsers, boolean andDisable) {
         stopListeningToPackageRemove();
         // Create new intent to launch Uninstaller activity
