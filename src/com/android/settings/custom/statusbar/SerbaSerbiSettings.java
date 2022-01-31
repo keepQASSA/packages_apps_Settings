@@ -18,8 +18,11 @@
 package com.android.settings.custom.statusbar;
 
 import android.content.Context;
+import android.content.ContentResolver;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.os.SystemProperties;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
@@ -39,10 +42,23 @@ public class SerbaSerbiSettings extends SettingsPreferenceFragment
 
     private static final String ICON_BLACKLIST = "icon_blacklist";
 
+    private static final String KEY_PHOTOS_SPOOF = "use_photos_spoof";
+    private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
+
+    private SwitchPreference mPhotosSpoof;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.serba_serbi_settings);
+
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+        final ContentResolver resolver = getActivity().getContentResolver();
+        Resources res = getResources();
+
+        mPhotosSpoof = (SwitchPreference) prefScreen.findPreference(KEY_PHOTOS_SPOOF);
+        mPhotosSpoof.setChecked(SystemProperties.getBoolean(SYS_PHOTOS_SPOOF, true));
+        mPhotosSpoof.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -54,7 +70,16 @@ public class SerbaSerbiSettings extends SettingsPreferenceFragment
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mPhotosSpoof) {
+            boolean value = (Boolean) newValue;
+            SystemProperties.set(SYS_PHOTOS_SPOOF, value ? "true" : "false");
+            return true;
+        }
         return true;
+    }
+
+    public static void reset(Context mContext) {
+        SystemProperties.set(SYS_PHOTOS_SPOOF, "true");
     }
 
     @Override
