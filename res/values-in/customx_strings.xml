@@ -259,4 +259,7 @@
     <string name="maintainer">Pengelola</string>
     <string name="aosqp_version_title">Versi AOSQP</string>
     <string name="about_device_name">Nama perangkat</string>
+    <string name="spoof_title">Spoofing</string>
+    <string name="use_photos_spoof_title">Penyimpanan Photos tanpa batas</string>
+    <string name="use_photos_spoof_summary">Spoof device mu ke Pixel XL untuk penyimpanan Google Photos tanpa batas</string>
 </resources>

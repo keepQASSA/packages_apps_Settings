@@ -20,4 +20,17 @@
     android:key="serba_serba_settings"
     android:title="@string/serba_serbi_title">
 
+    <PreferenceCategory
+        android:key="spoof_category"
+        android:title="@string/spoof_title">
+
+        <!-- Unlimited google photos storage -->
+        <SwitchPreference
+            android:key="use_photos_spoof"
+            android:title="@string/use_photos_spoof_title"
+            android:summary="@string/use_photos_spoof_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
