@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2021 xdroid, xyzprjkt
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- xd. version -->
+    <string name="xd_version">XD revision</string>
+
+    <!-- CAF Revision -->
+    <string name="caf_rev">CAF revision</string>
+
+    <!-- xd. fake toolbar -->
+    <string name="xd_firmware_info">Firmware information</string>
+    <string name="xd_hardware_info">Hardware information</string>
+    <string name="xd_about_phone">About phone</string>
+    <string name="xd_about">About xdroid</string>
+
+    <!-- xd. Dashboard -->
+    <string name="xd_dashboard_greet">What are you looking for?</string>
+    <string name="xd_dashboard_device">About phone</string>
+    <string name="xd_dashboard_account">Account</string>
+    <string name="xd_dashboard_network">Internet</string>
+    <string name="xd_dashboard_conectivity">Connectivity</string>    
+    <string name="xd_dashboard_display">Display</string>
+    <string name="xd_dashboard_battery">Battery</string>
+    <string name="xd_dashboard_sound">Sound</string>
+    <string name="xd_dashboard_apps">Apps</string>    
+    <string name="xd_dashboard_storage">Storage</string>
+    <string name="xd_dashboard_privacy">Privacy</string>    
+    <string name="xd_dashboard_location">Location</string>
+    <string name="xd_dashboard_security">Security</string>
+    <string name="xd_dashboard_accessibility">Accessibility</string>
+    <string name="xd_dashboard_system">Other</string>    
+    <string name="xd_dashboard_support">Support</string>
+
+    <!-- xd. mnmlist. -->
+    <string name="xd_dashboard_xzrypr">Mnmlist</string>
+    <string name="xd_dashboard_xzrypr_summary">Get your favorite customization here</string>
+
+    <!-- xd. Preferences -->
+    <string name="xd_firmware_info_summary">Information about firmware in this phone</string>
+    <string name="xd_hardware_info_summary">Information about hardware in this phone</string>
+    <string name="xd_device_owner">Owner name</string>
+    <string name="xd_legal_information_summary">License legal information</string>
+    <string name="xd_regulatory_summary">Regulatory information</string>
+    <string name="xd_wifi_saved">Saved network</string>
+    <string name="blurs_effect">Blur effect</string>
+    <string name="dark_ui_mode_summary">Enable Dark Theme in this devices</string>
+    <string name="xd_updater">System update</string>
+    <string name="xd_updater_summary">Tap here to check latest latest firmware update</string>
+
+    <!-- xd. Preferences Category -->
+    <string name="xd_about_phone_owner_cat">Owner information</string>
+    <string name="xd_about_phone_information_cat">Device information</string>
+    <string name="xd_about_phone_legalregulator_cat">Legal and Regulator information</string>
+    <string name="xd_about_phone_network_cat">Network information</string>    
+    <string name="xd_firmware_version_cat">Firmware version</string>
+    <string name="xd_firmware_security_cat">Firmware security</string>
+    <string name="xd_general_cat">General</string>
+    <string name="xd_category_ui">User interfaces</string>    
+    <string name="xd_category_screen">Screen</string>
+    <string name="xd_category_density">Density</string>
+    <string name="xd_category_gesture">Screen gestures</string>
+    <string name="xd_category_brightness">Brightness</string>
+    <string name="xd_about_core_team_cat">Core developer</string>
+    <string name="xd_about_contributor_cat">Contributor</string>
+
+    <!-- xd. About -->
+    <string name="xd_about_desc">xdroid is a custom ROM based on CAF which focusing on simple and minimalism UI while keep maintaining the smoothness and optimization provided by Code Aurora Forum.</string>
+    <string name="xd_about_core_xyzuan">Jody Yuantoro</string>
+    <string name="xd_about_core_xyzuan_role">Founder, Lead Developer and UI Designer</string>
+    <string name="xd_about_core_friction">Firman Yanuar</string>
+    <string name="xd_about_core_friction_role">UI and UX Designer</string>
+    <string name="xd_about_contributor_rdclxvi">Royan AK</string>
+    <string name="xd_about_contributor_rdclxvi_role">Indonesia Translator</string>
+    <string name="xd_about_contributor_iszon">Iszon</string>
+    <string name="xd_about_contributor_iszon_role">Polish Translator</string>
+
+    <!-- xd. About Phone -->
+    <string name="xd_device_name">Device Name</string>
+    <string name="xd_device_name_summary">Unknown</string>
+    <string name="xd_chipset_type">Chipset</string>
+    <string name="xd_chipset_type_summary">Unknown</string>
+    <string name="xd_gpu">GPU</string>
+    <string name="xd_gpu_summary">Unknown</string>
+    <string name="xd_camera_mp">Camera</string>
+    <string name="xd_camera_mp_summary">Unknown</string>
+    <string name="xd_screen_type">Screen</string>
+    <string name="xd_screen_type_summary">Unknown</string>
+    
+    <!-- Torch Power button gestures -->
+    <string name="power_button_torch_title">Quick torch</string>
+    <string name="power_button_torch_summary">When the screen is off, long-pressing power button will enable torch</string>
+
+    <!-- Volume Control -->
+    <string name="volume_button_music_control_title">Playback control</string>
+    <string name="volume_button_music_control_summary">When the screen is off, long-pressing volume keys will skip music tracks</string>
+
+    <!-- Ambient Music -->
+    <string name="pulse_on_new_tracks_title">Ambient music ticker</string>
+    <string name="pulse_on_new_tracks_summary">Show Ambient Display when a new music track is played</string>
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Swipe to screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
+
+        <!-- Traffic Indicator -->
+    <string name="trafficsettings_title">Traffic Indicator</string>
+    <string name="trafficsettings_summary">Statusbar/Header traffic indicator settings</string>
+    <string name="network_traffic_settings_title">Network traffic monitor</string>
+    <string name="network_traffic_settings_summary">Display and customize current network traffic levels</string>
+    <string name="network_traffic_location_title">Location</string>
+    <string name="network_traffic_location_disable">Disabled</string>
+    <string name="network_traffic_location_statusbar">Statusbar</string>
+    <string name="network_traffic_location_quick_statusbar">Quick Statusbar</string>
+    <string name="network_traffic_mode_title">Display mode</string>
+    <string name="network_traffic_mode_up">Upload only</string>
+    <string name="network_traffic_mode_down">Download only</string>
+    <string name="network_traffic_mode_all">Upload and download</string>
+    <string name="network_traffic_autohide">Auto hide</string>
+    <string name="network_traffic_autohide_summary">Hide the traffic monitor when inactive</string>
+    <string name="network_traffic_autohide_kilobits">Kb/s</string>
+    <string name="network_traffic_autohide_kilobytes">KB/s</string>
+    <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
+    <string name="network_traffic_show_units">Show units</string>
+    <string name="network_traffic_show_units_summary">Whether to show traffic measurement units</string>
+    <string name="network_traffic_units_title">Traffic measurement units</string>
+    <string name="network_traffic_units_bits">Bits per second (b/s)</string>
+    <string name="network_traffic_units_kilobits">Kilobits per second (kb/s)</string>
+    <string name="network_traffic_units_megabits">Megabits per second (Mb/s)</string>
+    <string name="network_traffic_units_bytes">Bytes per second (B/s)</string>
+    <string name="network_traffic_units_kilobytes">Kilobytes per second (kB/s)</string>
+    <string name="network_traffic_units_megabytes">Megabytes per second (MB/s)</string>
+    <string name="network_traffic_hidearrow">Hide arrows</string>
+    <string name="network_traffic_hidearrow_summary">Hide the network traffic indicator arrows</string>
+    <string name="network_traffic_refresh_interval_title">Refresh interval</string>
+    <string name="network_traffic_refresh_interval_summary">Duration after which speed is remeasured</string>
+    <string name="unit_seconds">sec</string>
+
+    <!-- Support -->
+    <string name="ok">OK</string>
+    <string name="edit_hint">Value</string>
+    <string name="seek_value_edit_label">Set value</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">Default</string>
+    <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong press to set</string>
+    <string name="custom_seekbar_default_value_is_set">Default value is set</string>
+
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Swipe up to unlock</string>
+    <string name="security_settings_face_require_swipe_summary">Swipe up on the lockscreen to use face unlock</string>
+
+    <!-- Navbar length -->
+    <string name="navbar_length">Gesture bar length</string>
+    <string name="hidden_label">Hidden</string>
+    <string name="long_label">Long</string>
+
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_mobile">Mobile data</string>
+    <string name="data_usage_app_restrict_mobile_summary">Enable usage of mobile data</string>
+    <string name="data_usage_app_restrict_vpn">VPN data</string>
+    <string name="data_usage_app_restrict_vpn_summary">Enable usage of VPN data</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
+    <string name="data_usage_app_restrict_wifi_summary">Enable usage of Wi\u2011Fi data</string>
+    <string name="data_usage_app_restrict_all">Allow network access</string>
+    <string name="data_usage_app_restrict_all_summary">Enable network usage</string>
+    
+    <!-- Refresh rate -->
+    <string name="min_refresh_rate_title">Minimum refresh rate</string>
+    <string name="max_refresh_rate_title">Maximum refresh rate</string>
+    <string name="battery_saver_refresh_rate_title">Reduce refresh rate</string>
+    <string name="battery_saver_refresh_rate_summary">Use 60 Hz screen refresh rate to save power when Battery Saver is on</string>
+
+    <string name="wifi_tether_client_list_title">Client List</string>
+    <string name="wifi_tether_client_list_summary">Manage clients connected to hotspot</string>
+
+    <!-- Hotspot extras -->
+    <string name="tethering_allow_vpn_upstreams_title">Allow clients to use VPNs</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permit hotspot clients to use this device\u2019s VPN connections for upstream connectivity</string>
+
+    <!-- App Lock -->
+    <string name="applock_title">App locker</string>
+    <string name="applock_locked">Locked</string>
+    <string name="applock_unlocked">Unlocked</string>
+    <string name="applock_locked_apps">Locked apps</string>
+    <string name="applock_unlocked_apps">Unlocked apps</string>
+    <string name="applock_lock_after_title">Lock app after</string>
+    <string name="applock_lock_after_instantly">Instantly</string>
+    <string name="applock_lock_after_15_seconds">15 Seconds</string>
+    <string name="applock_lock_after_screen_off">Screen off</string>
+    <string name="applock_lock_after_summary">App will be locked after selected timeout</string>
+    <string name="applock_lock_after_instantly_summary">App will be locked instantly when closed</string>
+    <string name="applock_lock_after_15_seconds_summary">App will be locked 15 seconds after closing</string>
+    <string name="applock_lock_after_screen_off_summary">App will be locked when screen is turned off</string>
+    <string name="applock_notification_info">You can show/hide the notification content on a per-app basis by clicking on the notification icon shown on each locked apps\' preference</string>
+    <string name="applock_show_notif">Showing notification content</string>
+    <string name="applock_hide_notif">Hiding notification content</string>
+    <string name="applock_setup">Setup app locker</string>
+    <string name="applock_overlay_summary">This feature is not available because this app is locked</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 app locked</item>
+        <item quantity="other">%d apps locked</item>
+    </plurals>
+    <string name="keywords_applock_settings">applock, applocker, app lock, app locker</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">This will reset battery history stats. Would you like to continue?</string>
+
+    <!-- Format string for fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="tablet">Locate the fingerprint sensor on the <xliff:g id="sensor_location">%1$s</xliff:g> of your tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="device">Locate the fingerprint sensor on the <xliff:g id="sensor_location">%1$s</xliff:g> of your device.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_cm" product="default">Locate the fingerprint sensor on the <xliff:g id="sensor_location">%1$s</xliff:g> of your phone.</string>
+
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">back</string>
+    <string name="security_settings_fingerprint_sensor_location_front">front</string>
+    <string name="security_settings_fingerprint_sensor_location_left">left side</string>
+    <string name="security_settings_fingerprint_sensor_location_right">right side</string>
+
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Volume steps</string>
+    <string name="volume_steps_summary">Number of steps for volumes</string>
+    <string name="volume_steps_alarm_title">Volume steps: Alarm</string>
+    <string name="volume_steps_dtmf_title">Volume steps: DTMF</string>
+    <string name="volume_steps_music_title">Volume steps: Music</string>
+    <string name="volume_steps_notification_title">Volume steps: Notification</string>
+    <string name="volume_steps_ring_title">Volume steps: Ringer</string>
+    <string name="volume_steps_system_title">Volume steps: System</string>
+    <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
+    <string name="volume_steps_reset">Reset</string>
+    <string name="volume_steps_60" translatable="false">60</string>
+    <string name="volume_steps_45" translatable="false">45</string>
+    <string name="volume_steps_30" translatable="false">30</string>
+    <string name="volume_steps_15" translatable="false">15</string>
+    <string name="volume_steps_7" translatable="false">7</string>
+    <string name="volume_steps_5" translatable="false">5</string>
+
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
+
+</resources>
