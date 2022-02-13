@@ -263,4 +263,6 @@
     <string name="use_photos_spoof_summary">Spoof device mu ke Pixel XL untuk penyimpanan Google Photos tanpa batas</string>
     <string name="use_games_spoof_title">Buka FPS tinggi di beberapa games</string>
     <string name="use_games_spoof_summary">Spoof device mu ke model berbeda untuk membuka FPS tinggi</string>
+    <string name="use_stream_spoof_title">Buka kualitas tinggi di streaming</string>
+    <string name="use_stream_spoof_summary">Spoof device mu ke Pixel 6 Pro untuk membuka kualitas tinggi di Amazon Prime, Disney+, Hotstar, dan Netflix</string>
 </resources>
