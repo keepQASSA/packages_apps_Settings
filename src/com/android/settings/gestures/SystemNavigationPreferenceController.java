@@ -27,7 +27,7 @@ import android.content.pm.PackageManager;
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
-import com.android.internal.util.custom.NavbarUtils;
+import com.android.internal.util.aosqp.NavbarUtils;
 
 public class SystemNavigationPreferenceController extends BasePreferenceController {
 

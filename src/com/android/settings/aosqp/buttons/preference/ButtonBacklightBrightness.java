@@ -2,6 +2,7 @@
  * Copyright (C) 2013 The CyanogenMod Project
  *               2017 The LineageOS Project
  *               2018 The PixelExperience Project
+ *               2022 AOSQP
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +17,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.custom.buttons.preference;
+package com.android.settings.aosqp.buttons.preference;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -40,10 +41,10 @@ import androidx.preference.PreferenceManager;
 
 import com.android.settings.R;
 
-import com.android.settings.custom.utils.DeviceUtils;
-import com.android.settings.custom.preference.CustomDialogPreference;
+import com.android.settings.aosqp.utils.DeviceUtils;
+import com.android.settings.aosqp.preference.AosqpDialogPreference;
 
-public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialog> implements
+public class ButtonBacklightBrightness extends AosqpDialogPreference<AlertDialog> implements
         SeekBar.OnSeekBarChangeListener {
     private static final int DEFAULT_BUTTON_TIMEOUT = 5;
 

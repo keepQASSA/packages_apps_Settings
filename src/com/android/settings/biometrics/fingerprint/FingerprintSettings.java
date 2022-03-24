@@ -66,7 +66,7 @@ import com.android.settingslib.widget.FooterPreference;
 import java.util.HashMap;
 import java.util.List;
 
-import com.android.internal.util.custom.fod.FodUtils;
+import com.android.internal.util.aosqp.fod.FodUtils;
 
 /**
  * Settings screen for fingerprints

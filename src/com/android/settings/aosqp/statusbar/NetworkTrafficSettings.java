@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.custom.statusbar;
+package com.android.settings.aosqp.statusbar;
 
 import android.content.ContentResolver;
 import android.os.Bundle;
@@ -29,7 +29,7 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.android.internal.util.custom.cutout.CutoutUtils;
+import com.android.internal.util.aosqp.cutout.CutoutUtils;
 
 public class NetworkTrafficSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener  {
@@ -98,6 +98,6 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.CUSTOM_SETTINGS;
+        return MetricsEvent.AOSQP_SETTINGS;
     }
 }

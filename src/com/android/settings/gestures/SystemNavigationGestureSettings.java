@@ -24,11 +24,11 @@ import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL_OV
 import static com.android.settings.widget.RadioButtonPreferenceWithExtraWidget.EXTRA_WIDGET_VISIBILITY_GONE;
 import static com.android.settings.widget.RadioButtonPreferenceWithExtraWidget.EXTRA_WIDGET_VISIBILITY_SETTING;
 
-import static com.android.internal.util.custom.NavbarUtils.NAV_BAR_MODE_GESTURAL_OVERLAY_NO_PILL;
-import static com.android.internal.util.custom.NavbarUtils.NAV_BAR_MODE_GESTURAL_OVERLAY_NARROW_BACK_NO_PILL;
-import static com.android.internal.util.custom.NavbarUtils.NAV_BAR_MODE_GESTURAL_OVERLAY_WIDE_BACK_NO_PILL;
-import static com.android.internal.util.custom.NavbarUtils.NAV_BAR_MODE_GESTURAL_OVERLAY_EXTRA_WIDE_BACK_NO_PILL;
-import static com.android.internal.util.custom.NavbarUtils.BACK_GESTURE_INSET_OVERLAYS_NO_PILL;
+import static com.android.internal.util.aosqp.NavbarUtils.NAV_BAR_MODE_GESTURAL_OVERLAY_NO_PILL;
+import static com.android.internal.util.aosqp.NavbarUtils.NAV_BAR_MODE_GESTURAL_OVERLAY_NARROW_BACK_NO_PILL;
+import static com.android.internal.util.aosqp.NavbarUtils.NAV_BAR_MODE_GESTURAL_OVERLAY_WIDE_BACK_NO_PILL;
+import static com.android.internal.util.aosqp.NavbarUtils.NAV_BAR_MODE_GESTURAL_OVERLAY_EXTRA_WIDE_BACK_NO_PILL;
+import static com.android.internal.util.aosqp.NavbarUtils.BACK_GESTURE_INSET_OVERLAYS_NO_PILL;
 
 import android.accessibilityservice.AccessibilityServiceInfo;
 import android.app.settings.SettingsEnums;

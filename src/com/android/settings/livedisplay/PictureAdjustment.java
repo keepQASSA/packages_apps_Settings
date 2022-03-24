@@ -27,19 +27,19 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.android.settings.custom.preference.CustomDialogPreference;
+import com.android.settings.aosqp.preference.AosqpDialogPreference;
 import com.android.settings.IntervalSeekBar;
 import com.android.settings.R;
 
 import java.util.List;
 
-import com.android.internal.custom.hardware.HSIC;
-import com.android.internal.custom.hardware.LiveDisplayManager;
+import com.android.internal.aosqp.hardware.HSIC;
+import com.android.internal.aosqp.hardware.LiveDisplayManager;
 
 /**
  * Special preference type that allows configuration of Color settings
  */
-public class PictureAdjustment extends CustomDialogPreference<AlertDialog> {
+public class PictureAdjustment extends AosqpDialogPreference<AlertDialog> {
     private static final String TAG = "PictureAdjustment";
 
     private final Context mContext;

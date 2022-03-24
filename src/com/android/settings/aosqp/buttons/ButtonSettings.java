@@ -2,6 +2,7 @@
  * Copyright (C) 2016 The CyanogenMod project
  * Copyright (C) 2017-2018 The LineageOS project
  * Copyright (C) 2018 The PixelExperience Project
+ * Copyright (C) 2022 AOSQP
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +17,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.custom.buttons;
+package com.android.settings.aosqp.buttons;
 
 import android.app.ActivityManager;
 import android.content.ContentResolver;
@@ -45,19 +46,19 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.android.settings.custom.buttons.preference.*;
-import com.android.settings.custom.utils.DeviceUtils;
-import com.android.settings.custom.utils.TelephonyUtils;
+import com.android.settings.aosqp.buttons.preference.*;
+import com.android.settings.aosqp.utils.DeviceUtils;
+import com.android.settings.aosqp.utils.TelephonyUtils;
 
-import static com.android.internal.util.custom.hwkeys.DeviceKeysConstants.*;
+import static com.android.internal.util.aosqp.hwkeys.DeviceKeysConstants.*;
 
-import com.android.internal.util.custom.NavbarUtils;
+import com.android.internal.util.aosqp.NavbarUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import com.android.settings.custom.preference.CustomDialogPreference;
+import com.android.settings.aosqp.preference.AosqpDialogPreference;
 import com.android.settings.gestures.SystemNavigationPreferenceController;
 
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_2BUTTON_OVERLAY;
@@ -731,9 +732,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             }, 1000);
         }else if(preference == mAdditionalButtonsPreference){
             try {
-                String[] customButtonsPackage = getResources().getString(R.string.config_customButtonsPackage).split("/");
-                String activityName = customButtonsPackage[0];
-                String className = customButtonsPackage[1];
+                String[] aosqpButtonsPackage = getResources().getString(R.string.config_customButtonsPackage).split("/");
+                String activityName = aosqpButtonsPackage[0];
+                String className = aosqpButtonsPackage[1];
                 Intent intent = new Intent();
                 intent.setComponent(new ComponentName(activityName, className));
                 startActivity(intent);
@@ -784,7 +785,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.CUSTOM_SETTINGS;
+        return MetricsEvent.AOSQP_SETTINGS;
     }
 
     @Override
@@ -794,8 +795,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             preference.setKey(UUID.randomUUID().toString());
         }
         DialogFragment f = null;
-        if (preference instanceof CustomDialogPreference) {
-            f = CustomDialogPreference.CustomPreferenceDialogFragment
+        if (preference instanceof AosqpDialogPreference) {
+            f = AosqpDialogPreference.AosqpPreferenceDialogFragment
                     .newInstance(preference.getKey());
         } else {
             super.onDisplayPreferenceDialog(preference);

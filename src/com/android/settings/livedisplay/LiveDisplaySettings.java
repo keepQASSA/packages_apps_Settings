@@ -45,29 +45,29 @@ import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
-import com.android.internal.custom.hardware.LineageHardwareManager;
-import com.android.internal.custom.hardware.DisplayMode;
-import com.android.internal.custom.hardware.LiveDisplayConfig;
-import com.android.internal.custom.hardware.LiveDisplayManager;
+import com.android.internal.aosqp.hardware.LineageHardwareManager;
+import com.android.internal.aosqp.hardware.DisplayMode;
+import com.android.internal.aosqp.hardware.LiveDisplayConfig;
+import com.android.internal.aosqp.hardware.LiveDisplayManager;
 
-import com.android.settings.custom.utils.SettingsHelper;
-import com.android.settings.custom.utils.ResourceUtils;
+import com.android.settings.aosqp.utils.SettingsHelper;
+import com.android.settings.aosqp.utils.ResourceUtils;
 
-import com.android.settings.custom.preference.CustomDialogPreference;
+import com.android.settings.aosqp.preference.AosqpDialogPreference;
 
-import com.android.internal.util.custom.PackageManagerUtils;
+import com.android.internal.util.aosqp.PackageManagerUtils;
 
-import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_CABC;
-import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_COLOR_ADJUSTMENT;
-import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_COLOR_ENHANCEMENT;
-import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_DISPLAY_MODES;
-import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_PICTURE_ADJUSTMENT;
-import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_READING_ENHANCEMENT;
-import static com.android.internal.custom.hardware.LiveDisplayManager.MODE_AUTO;
-import static com.android.internal.custom.hardware.LiveDisplayManager.MODE_DAY;
-import static com.android.internal.custom.hardware.LiveDisplayManager.MODE_NIGHT;
-import static com.android.internal.custom.hardware.LiveDisplayManager.MODE_OFF;
-import static com.android.internal.custom.hardware.LiveDisplayManager.MODE_OUTDOOR;
+import static com.android.internal.aosqp.hardware.LiveDisplayManager.FEATURE_CABC;
+import static com.android.internal.aosqp.hardware.LiveDisplayManager.FEATURE_COLOR_ADJUSTMENT;
+import static com.android.internal.aosqp.hardware.LiveDisplayManager.FEATURE_COLOR_ENHANCEMENT;
+import static com.android.internal.aosqp.hardware.LiveDisplayManager.FEATURE_DISPLAY_MODES;
+import static com.android.internal.aosqp.hardware.LiveDisplayManager.FEATURE_PICTURE_ADJUSTMENT;
+import static com.android.internal.aosqp.hardware.LiveDisplayManager.FEATURE_READING_ENHANCEMENT;
+import static com.android.internal.aosqp.hardware.LiveDisplayManager.MODE_AUTO;
+import static com.android.internal.aosqp.hardware.LiveDisplayManager.MODE_DAY;
+import static com.android.internal.aosqp.hardware.LiveDisplayManager.MODE_NIGHT;
+import static com.android.internal.aosqp.hardware.LiveDisplayManager.MODE_OFF;
+import static com.android.internal.aosqp.hardware.LiveDisplayManager.MODE_OUTDOOR;
 
 public class LiveDisplaySettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, SettingsHelper.OnSettingsChangeListener {
@@ -407,7 +407,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.CUSTOM_SETTINGS;
+        return MetricsEvent.AOSQP_SETTINGS;
     }
 
     @Override
@@ -417,8 +417,8 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements
             preference.setKey(UUID.randomUUID().toString());
         }
         DialogFragment f = null;
-        if (preference instanceof CustomDialogPreference) {
-            f = CustomDialogPreference.CustomPreferenceDialogFragment
+        if (preference instanceof AosqpDialogPreference) {
+            f = AosqpDialogPreference.AosqpPreferenceDialogFragment
                     .newInstance(preference.getKey());
         } else {
             super.onDisplayPreferenceDialog(preference);

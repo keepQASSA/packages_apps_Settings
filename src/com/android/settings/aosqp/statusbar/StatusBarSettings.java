@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.settings.custom.statusbar;
+package com.android.settings.aosqp.statusbar;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -29,13 +29,13 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
-import com.android.settings.custom.preference.SystemSettingListPreference;
+import com.android.settings.aosqp.preference.SystemSettingListPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.android.internal.util.custom.cutout.CutoutUtils;
+import com.android.internal.util.aosqp.cutout.CutoutUtils;
 
 import java.util.Set;
 
@@ -241,6 +241,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.CUSTOM_SETTINGS;
+        return MetricsEvent.AOSQP_SETTINGS;
     }
 }

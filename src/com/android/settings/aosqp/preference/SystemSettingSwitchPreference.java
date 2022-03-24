@@ -2,6 +2,7 @@
  * Copyright (C) 2015 The CyanogenMod Project
  * Copyright (C) 2018 The LineageOS Project
  * Copyright (C) 2018 The PixelExperience Project
+ * Copyright (C) 2022 AOSQP
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +17,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.custom.preference;
+package com.android.settings.aosqp.preference;
 
 import android.content.Context;
 import android.util.AttributeSet;

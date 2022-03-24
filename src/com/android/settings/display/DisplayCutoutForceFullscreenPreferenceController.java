@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2019 The PixelExperience Project
+ * Copyright (C) 2022 AOSQP
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +23,7 @@ import android.os.UserHandle;
 
 import com.android.settings.core.BasePreferenceController;
 
-import com.android.internal.util.custom.cutout.CutoutFullscreenController;
+import com.android.internal.util.aosqp.cutout.CutoutFullscreenController;
 
 public class DisplayCutoutForceFullscreenPreferenceController extends BasePreferenceController {
 

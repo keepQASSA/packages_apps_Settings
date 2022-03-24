@@ -27,17 +27,17 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.android.settings.custom.preference.CustomDialogPreference;
+import com.android.settings.aosqp.preference.AosqpDialogPreference;
 import com.android.settings.R;
-import com.android.internal.util.custom.MathUtils;
+import com.android.internal.util.aosqp.MathUtils;
 
-import com.android.internal.custom.hardware.LiveDisplayConfig;
-import com.android.internal.custom.hardware.LiveDisplayManager;
+import com.android.internal.aosqp.hardware.LiveDisplayConfig;
+import com.android.internal.aosqp.hardware.LiveDisplayManager;
 
 /**
  * Preference for selection of color temperature range for LiveDisplay
  */
-public class DisplayTemperature extends CustomDialogPreference<AlertDialog> {
+public class DisplayTemperature extends AosqpDialogPreference<AlertDialog> {
     private static final String TAG = "DisplayTemperature";
 
     private final Context mContext;

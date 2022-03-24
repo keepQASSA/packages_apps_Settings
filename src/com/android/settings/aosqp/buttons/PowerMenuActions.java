@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.custom.buttons;
+package com.android.settings.aosqp.buttons;
 
 import android.content.Context;
 import android.content.Intent;
@@ -28,13 +28,13 @@ import android.provider.Settings;
 import androidx.preference.CheckBoxPreference;
 import androidx.preference.Preference;
 
-import com.android.internal.util.custom.PowerMenuConstants;
+import com.android.internal.util.aosqp.PowerMenuConstants;
 import com.android.settings.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.android.internal.util.custom.PowerMenuConstants.*;
+import static com.android.internal.util.aosqp.PowerMenuConstants.*;
 
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -207,7 +207,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.CUSTOM_SETTINGS;
+        return MetricsEvent.AOSQP_SETTINGS;
     }
 
 }

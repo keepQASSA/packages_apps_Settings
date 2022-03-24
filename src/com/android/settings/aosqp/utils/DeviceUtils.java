@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.settings.custom.utils;
+package com.android.settings.aosqp.utils;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
@@ -37,7 +37,7 @@ import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.Surface;
 
-import static com.android.internal.util.custom.hwkeys.DeviceKeysConstants.*;
+import static com.android.internal.util.aosqp.hwkeys.DeviceKeysConstants.*;
 
 public class DeviceUtils {
 

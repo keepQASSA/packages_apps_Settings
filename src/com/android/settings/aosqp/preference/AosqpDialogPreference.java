@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.settings.custom.preference;
+package com.android.settings.aosqp.preference;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -27,24 +27,24 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.preference.PreferenceDialogFragmentCompat;
 import androidx.preference.DialogPreference;
 
-public class CustomDialogPreference<T extends DialogInterface> extends DialogPreference {
+public class AosqpDialogPreference<T extends DialogInterface> extends DialogPreference {
 
-    private CustomPreferenceDialogFragment mFragment;
+    private AosqpPreferenceDialogFragment mFragment;
 
-    public CustomDialogPreference(Context context, AttributeSet attrs, int defStyleAttr,
+    public AosqpDialogPreference(Context context, AttributeSet attrs, int defStyleAttr,
             int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
 
-    public CustomDialogPreference(Context context, AttributeSet attrs, int defStyleAttr) {
+    public AosqpDialogPreference(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
-    public CustomDialogPreference(Context context, AttributeSet attrs) {
+    public AosqpDialogPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public CustomDialogPreference(Context context) {
+    public AosqpDialogPreference(Context context) {
         super(context);
     }
 
@@ -89,7 +89,7 @@ public class CustomDialogPreference<T extends DialogInterface> extends DialogPre
         return null;
     }
 
-    private void setFragment(CustomPreferenceDialogFragment fragment) {
+    private void setFragment(AosqpPreferenceDialogFragment fragment) {
         mFragment = fragment;
     }
 
@@ -97,18 +97,18 @@ public class CustomDialogPreference<T extends DialogInterface> extends DialogPre
         return true;
     }
 
-    public static class CustomPreferenceDialogFragment extends PreferenceDialogFragmentCompat {
+    public static class AosqpPreferenceDialogFragment extends PreferenceDialogFragmentCompat {
 
-        public static CustomPreferenceDialogFragment newInstance(String key) {
-            final CustomPreferenceDialogFragment fragment = new CustomPreferenceDialogFragment();
+        public static AosqpPreferenceDialogFragment newInstance(String key) {
+            final AosqpPreferenceDialogFragment fragment = new AosqpPreferenceDialogFragment();
             final Bundle b = new Bundle(1);
             b.putString(ARG_KEY, key);
             fragment.setArguments(b);
             return fragment;
         }
 
-        private CustomDialogPreference getCustomizablePreference() {
-            return (CustomDialogPreference) getPreference();
+        private AosqpDialogPreference getAosqpizablePreference() {
+            return (AosqpDialogPreference) getPreference();
         }
 
         private class OnDismissListener implements View.OnClickListener {
@@ -122,8 +122,8 @@ public class CustomDialogPreference<T extends DialogInterface> extends DialogPre
 
             @Override
             public void onClick(View view) {
-                CustomPreferenceDialogFragment.this.onClick(mDialog, mWhich);
-                if (getCustomizablePreference().onDismissDialog(mDialog, mWhich)) {
+                AosqpPreferenceDialogFragment.this.onClick(mDialog, mWhich);
+                if (getAosqpizablePreference().onDismissDialog(mDialog, mWhich)) {
                     mDialog.dismiss();
                 }
             }
@@ -147,56 +147,56 @@ public class CustomDialogPreference<T extends DialogInterface> extends DialogPre
                             new OnDismissListener(a, Dialog.BUTTON_NEGATIVE));
                 }
             }
-            getCustomizablePreference().onStart();
+            getAosqpizablePreference().onStart();
         }
 
         @Override
         public void onStop() {
             super.onStop();
-            getCustomizablePreference().onStop();
+            getAosqpizablePreference().onStop();
         }
 
         @Override
         public void onPause() {
             super.onPause();
-            getCustomizablePreference().onPause();
+            getAosqpizablePreference().onPause();
         }
 
         @Override
         public void onResume() {
             super.onResume();
-            getCustomizablePreference().onResume();
+            getAosqpizablePreference().onResume();
         }
 
         @Override
         protected void onPrepareDialogBuilder(AlertDialog.Builder builder) {
             super.onPrepareDialogBuilder(builder);
-            getCustomizablePreference().setFragment(this);
-            getCustomizablePreference().onPrepareDialogBuilder(builder, this);
+            getAosqpizablePreference().setFragment(this);
+            getAosqpizablePreference().onPrepareDialogBuilder(builder, this);
         }
 
         @Override
         public void onDialogClosed(boolean positiveResult) {
-            getCustomizablePreference().onDialogClosed(positiveResult);
+            getAosqpizablePreference().onDialogClosed(positiveResult);
         }
 
         @Override
         protected void onBindDialogView(View view) {
             super.onBindDialogView(view);
-            getCustomizablePreference().onBindDialogView(view);
+            getAosqpizablePreference().onBindDialogView(view);
         }
 
         @Override
         public void onClick(DialogInterface dialog, int which) {
             super.onClick(dialog, which);
-            getCustomizablePreference().onClick(dialog, which);
+            getAosqpizablePreference().onClick(dialog, which);
         }
 
         @NonNull
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
-            getCustomizablePreference().setFragment(this);
-            final Dialog sub = getCustomizablePreference().onCreateDialog(savedInstanceState);
+            getAosqpizablePreference().setFragment(this);
+            final Dialog sub = getAosqpizablePreference().onCreateDialog(savedInstanceState);
             if (sub == null) {
                 return super.onCreateDialog(savedInstanceState);
             }
@@ -205,7 +205,7 @@ public class CustomDialogPreference<T extends DialogInterface> extends DialogPre
 
         @Override
         protected View onCreateDialogView(Context context) {
-            final View v = getCustomizablePreference().onCreateDialogView(context);
+            final View v = getAosqpizablePreference().onCreateDialogView(context);
             if (v == null) {
                 return super.onCreateDialogView(context);
             }

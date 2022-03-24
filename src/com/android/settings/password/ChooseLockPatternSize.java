@@ -151,7 +151,7 @@ public class ChooseLockPatternSize extends SettingsActivity {
 
         @Override
         public int getMetricsCategory() {
-            return MetricsEvent.CUSTOM_SETTINGS;
+            return MetricsEvent.AOSQP_SETTINGS;
         }
     }
 }

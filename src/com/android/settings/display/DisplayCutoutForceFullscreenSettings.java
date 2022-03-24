@@ -1,6 +1,7 @@
 /**
  * Copyright (C) 2018 The LineageOS Project
  * Copyright (C) 2019 PixelExperience
+ * Copyright (C) 2022 AOSQP
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -50,7 +51,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.android.internal.util.custom.cutout.CutoutFullscreenController;
+import com.android.internal.util.aosqp.cutout.CutoutFullscreenController;
 
 public class DisplayCutoutForceFullscreenSettings extends SettingsPreferenceFragment
         implements ApplicationsState.Callbacks {
@@ -369,6 +370,6 @@ public class DisplayCutoutForceFullscreenSettings extends SettingsPreferenceFrag
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.CUSTOM_SETTINGS;
+        return MetricsEvent.AOSQP_SETTINGS;
     }
 }

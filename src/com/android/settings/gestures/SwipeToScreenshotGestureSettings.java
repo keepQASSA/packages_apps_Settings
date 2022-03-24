@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2019 The PixelExperience Project
+ * Copyright (C) 2022 AOSQP
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,7 +39,7 @@ public class SwipeToScreenshotGestureSettings extends DashboardFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
+        return MetricsProto.MetricsEvent.AOSQP_SETTINGS;
     }
 
     @Override

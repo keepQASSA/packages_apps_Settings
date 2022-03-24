@@ -18,7 +18,7 @@ package com.android.settings.gestures;
 
 import android.content.Context;
 
-import com.android.internal.custom.hardware.LineageHardwareManager;
+import com.android.internal.aosqp.hardware.LineageHardwareManager;
 
 import com.android.settings.core.BasePreferenceController;
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.custom.buttons.preference;
+package com.android.settings.aosqp.buttons.preference;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
