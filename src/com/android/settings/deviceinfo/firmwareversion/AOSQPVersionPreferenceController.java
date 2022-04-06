@@ -16,30 +16,58 @@
 package com.android.settings.deviceinfo.firmwareversion;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.SystemProperties;
 import android.text.TextUtils;
+import android.util.Log;
+import android.view.View;
+
+import androidx.preference.Preference;
 
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
 public class AOSQPVersionPreferenceController extends BasePreferenceController {
 
-    private static final String PROPERTY_AOSQP_VERSION = "ro.aosqp.version.display";
+    private static final Uri INTENT_URI_DATA = Uri.parse("https://t.me/ngantuprjkt/");
+    private static final String TAG = "aosqpDialogCtrl";
+    private static final String AOSQP_VERSION_PROP = "ro.aosqp.version.number";
+    private static final String AOSQP_RELEASETYPE_PROP = "ro.aosqp.build_type";
+    private final PackageManager mPackageManager = this.mContext.getPackageManager();
 
-    public AOSQPVersionPreferenceController(Context context, String key) {
-        super(context, key);
+    public AOSQPVersionPreferenceController(Context context, String preferenceKey) {
+        super(context, preferenceKey);
     }
 
-    @Override
     public int getAvailabilityStatus() {
-        if (!TextUtils.isEmpty(SystemProperties.get(PROPERTY_AOSQP_VERSION))) return AVAILABLE;
-        return CONDITIONALLY_UNAVAILABLE;
+        return AVAILABLE;
     }
 
-    @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(PROPERTY_AOSQP_VERSION,
-                mContext.getString(R.string.unknown));
+        String aosqpVersion = SystemProperties.get(AOSQP_VERSION_PROP,
+                mContext.getString(R.string.device_info_default));
+        String aosqpReleasetype =  SystemProperties.get(AOSQP_RELEASETYPE_PROP,
+                this.mContext.getString(R.string.device_info_default));
+        if (!aosqpVersion.isEmpty() && !aosqpReleasetype.isEmpty())
+            return aosqpVersion + " | " + aosqpReleasetype;
+        else
+            return mContext.getString(R.string.unknown);
+    }
+
+    public boolean handlePreferenceTreeClick(Preference preference) {
+        if (!TextUtils.equals(preference.getKey(), getPreferenceKey())) {
+            return false;
+        }
+        Intent intent = new Intent();
+        intent.setAction("android.intent.action.VIEW");
+        intent.setData(INTENT_URI_DATA);
+        if (this.mPackageManager.queryIntentActivities(intent, 0).isEmpty()) {
+            Log.w(TAG, "queryIntentActivities() returns empty");
+            return true;
+        }
+        this.mContext.startActivity(intent);
+        return true;
     }
 }
-
