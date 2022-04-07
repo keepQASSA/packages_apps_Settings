@@ -22,6 +22,12 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <!-- AOSQP Banner -->
+    <PreferenceScreen
+        android:key="aosqp_banner"
+        android:enabled="false"
+        android:layout="@layout/aosqp_banner" />
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
