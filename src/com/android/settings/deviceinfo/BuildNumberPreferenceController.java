@@ -87,7 +87,10 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
             "Perhaps this Android thing is not for you...",
             "Don't you have anything better to do?!",
             "This is why nobody likes you...",
-            "Are you even trying?!",};
+            "Are you even trying?!",
+            "Yoo look at this dude, he using Android 10 in 2022! [LAUGH]",
+            "#Q Android System Still Allive!",
+            "#keepQASSA"};
 
     public void setHost(InstrumentedPreferenceFragment fragment) {
         mFragment = fragment;
