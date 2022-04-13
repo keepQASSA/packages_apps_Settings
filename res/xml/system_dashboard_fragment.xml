@@ -45,6 +45,14 @@
         android:order="-248"
         android:fragment="com.android.settings.custom.statusbar.StatusBarSettings" />
 
+    <!-- Quick Settings -->
+    <Preference
+        android:key="quick_settings"
+        android:title="@string/qs_title"
+        android:icon="@drawable/ic_settings_quicksettings"
+        android:order="-247"
+        android:fragment="com.android.settings.custom.statusbar.QuickSettings" />
+
     <Preference
         android:key="reset_dashboard"
         android:title="@string/reset_dashboard_title"

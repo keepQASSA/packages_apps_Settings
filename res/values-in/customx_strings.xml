@@ -146,9 +146,9 @@
     <string name="network_traffic_autohide">Sembunyi otomatis</string>
     <string name="network_traffic_autohide_summary">Sembunyikan monitor lalu lintas ketika tidak ada aktivitas</string>
     <string name="network_traffic_units_title">Satuan pengukuran lalu lintas</string>
-    <string name="qs_title">Configurações rápidas</string>
+    <string name="qs_title">Quick Settings</string>
     <string name="qs_rows_portrait_title">Baris (potret)</string>
-    <string name="qs_rows_landscape_title">Baris (lanskap)</string>
+    <string name="qs_rows_landscape_title">Baris (mendatar)</string>
     <string name="qs_columns_portrait_title">Kolom (potret)</string>
     <string name="qs_columns_landscape_title">Kolom (mendatar)</string>
     <string name="qs_tile_title_visibility_title">Visibilitas judul</string>
@@ -254,4 +254,6 @@
     <string name="proximity_wake_summary">Periksa sensor jarak sebelum membangunkan layar</string>
     <string name="enable_clear_all_button">Ganti teks hapus notifkasi dengan tombol yang bagus</string>
     <string name="enable_clear_all_button_summary">Tampilkan tombol hapus notifikasi yang baru</string>
+    <string name="general_qs_title">Umum</string>
+    <string name="rows_columns_qs_title">Baris dan Kolom</string>
 </resources>
