@@ -483,4 +483,7 @@ Notifications may be delayed for these apps."</string>
     <!-- Device Codename -->
     <string name="about_device_name">Device Codename</string>
 
+    <!-- Extras -->
+    <string name="serba_serbi_title">Extras</string>
+
 </resources>
