@@ -321,6 +321,8 @@ Notifications may be delayed for these apps."</string>
     <string name="qs_rows_landscape_title">Rows (landscape)</string>
     <string name="qs_columns_portrait_title">Columns (portrait)</string>
     <string name="qs_columns_landscape_title">Columns (landscape)</string>
+    <string name="general_qs_title">General</string>
+    <string name="rows_columns_qs_title">Rows and Columns</string>
 
     <!-- QS title visibility -->
     <string name="qs_tile_title_visibility_title">Title visibility</string>

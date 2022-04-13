@@ -97,9 +97,9 @@
     <string name="others_settings_title">Seting lainnya</string>
     <string name="additional_buttons_title">Tombol tambahan</string>
     <string name="status_bar_title">Status bar</string>
-    <string name="status_bar_quick_qs_pulldown_title">Keruntuhan cepat</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Menarik tepi kiri dari bilah status untuk Setelan Cepat</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Menarik tepi kanan dari status bar untuk Setelan Cepat</string>
+    <string name="status_bar_quick_qs_pulldown_title">QS expanded otomatis</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Tarik tepi kiri dari status bar untuk QS expanded otomatis</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Tarik tepi kanan dari status bar untuk QS expanded otomatis</string>
     <string name="status_bar_quick_qs_pulldown_off">Mati</string>
     <string name="status_bar_quick_qs_pulldown_left">Kiri</string>
     <string name="status_bar_quick_qs_pulldown_right">Kanan</string>
@@ -146,16 +146,16 @@
     <string name="network_traffic_autohide">Sembunyi otomatis</string>
     <string name="network_traffic_autohide_summary">Sembunyikan monitor lalu lintas ketika tidak ada aktivitas</string>
     <string name="network_traffic_units_title">Satuan pengukuran lalu lintas</string>
-    <string name="qs_title">Configurações rápidas</string>
+    <string name="qs_title">Quick Settings</string>
     <string name="qs_rows_portrait_title">Baris (potret)</string>
-    <string name="qs_rows_landscape_title">Baris (lanskap)</string>
+    <string name="qs_rows_landscape_title">Baris (mendatar)</string>
     <string name="qs_columns_portrait_title">Kolom (potret)</string>
     <string name="qs_columns_landscape_title">Kolom (mendatar)</string>
     <string name="qs_tile_title_visibility_title">Visibilitas judul</string>
-    <string name="qs_tile_title_visibility_summary">Tampilkan judul dibawah ubin QS</string>
-    <string name="qs_vibrate_title">Bergetar ketika disentuh</string>
-    <string name="qs_vibrate_summary">Bergetar saat menyentuh ubin QS</string>
-    <string name="qs_animation_options_title">Animasi pengaturan cepat</string>
+    <string name="qs_tile_title_visibility_summary">Tampilkan judul dibawah ikon QS</string>
+    <string name="qs_vibrate_title">Ikon QS bergetar ketika disentuh</string>
+    <string name="qs_vibrate_summary">Bergetar saat menyentuh ikon QS</string>
+    <string name="qs_animation_options_title">Animasi ikon qs</string>
     <string name="qs_tile_animation_style_title">Gaya</string>
     <string name="qs_tile_animation_duration_title">Durasi</string>
     <string name="qs_tile_animation_interpolator_title">Interpolasi</string>
@@ -252,4 +252,6 @@
     <string name="heads_up_notifications_enabled_summary">Menampilkan pemberitahuan prioritas dalam jendela kecil yang mengambang</string>
     <string name="proximity_wake_title">Cegah bangun yang tak disengaja</string>
     <string name="proximity_wake_summary">Periksa sensor jarak sebelum membangunkan layar</string>
+    <string name="general_qs_title">Umum</string>
+    <string name="rows_columns_qs_title">Baris dan Kolom</string>
 </resources>
