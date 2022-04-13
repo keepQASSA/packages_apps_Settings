@@ -53,6 +53,14 @@
         android:order="-247"
         android:fragment="com.android.settings.custom.statusbar.QuickSettings" />
 
+    <!-- Serba/i Settings -->
+    <Preference
+        android:key="serba_serbi_settings"
+        android:title="@string/serba_serbi_title"
+        android:icon="@drawable/ic_settings_serbaserbi"
+        android:order="-246"
+        android:fragment="com.android.settings.custom.statusbar.SerbaSerbiSettings" />
+
     <Preference
         android:key="reset_dashboard"
         android:title="@string/reset_dashboard_title"
