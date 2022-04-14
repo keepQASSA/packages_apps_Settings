@@ -252,4 +252,6 @@
     <string name="heads_up_notifications_enabled_summary">Menampilkan pemberitahuan prioritas dalam jendela kecil yang mengambang</string>
     <string name="proximity_wake_title">Cegah bangun yang tak disengaja</string>
     <string name="proximity_wake_summary">Periksa sensor jarak sebelum membangunkan layar</string>
+    <string name="maintainer">Pengelola</string>
+    <string name="aosqp_version_title">Versi AOSQP</string>
 </resources>
