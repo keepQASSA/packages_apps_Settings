@@ -97,9 +97,9 @@
     <string name="others_settings_title">Seting lainnya</string>
     <string name="additional_buttons_title">Tombol tambahan</string>
     <string name="status_bar_title">Status bar</string>
-    <string name="status_bar_quick_qs_pulldown_title">Keruntuhan cepat</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Menarik tepi kiri dari bilah status untuk Setelan Cepat</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Menarik tepi kanan dari status bar untuk Setelan Cepat</string>
+    <string name="status_bar_quick_qs_pulldown_title">QS expanded otomatis</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Tarik tepi kiri dari status bar untuk QS expanded otomatis</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Tarik tepi kanan dari status bar untuk QS expanded otomatis</string>
     <string name="status_bar_quick_qs_pulldown_off">Mati</string>
     <string name="status_bar_quick_qs_pulldown_left">Kiri</string>
     <string name="status_bar_quick_qs_pulldown_right">Kanan</string>
@@ -153,9 +153,9 @@
     <string name="qs_columns_landscape_title">Kolom (mendatar)</string>
     <string name="qs_tile_title_visibility_title">Visibilitas judul</string>
     <string name="qs_tile_title_visibility_summary">Tampilkan judul dibawah ubin QS</string>
-    <string name="qs_vibrate_title">Bergetar ketika disentuh</string>
-    <string name="qs_vibrate_summary">Bergetar saat menyentuh ubin QS</string>
-    <string name="qs_animation_options_title">Animasi pengaturan cepat</string>
+    <string name="qs_vibrate_title">Ikon QS bergetar ketika disentuh</string>
+    <string name="qs_vibrate_summary">Bergetar saat menyentuh ikon QS</string>
+    <string name="qs_animation_options_title">Animasi ikon qs</string>
     <string name="qs_tile_animation_style_title">Gaya</string>
     <string name="qs_tile_animation_duration_title">Durasi</string>
     <string name="qs_tile_animation_interpolator_title">Interpolasi</string>
