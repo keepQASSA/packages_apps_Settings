@@ -256,4 +256,6 @@
     <string name="enable_clear_all_button_summary">Tampilkan tombol hapus notifikasi yang baru</string>
     <string name="general_qs_title">Umum</string>
     <string name="rows_columns_qs_title">Baris dan Kolom</string>
+    <string name="maintainer">Pengelola</string>
+    <string name="aosqp_version_title">Versi AOSQP</string>
 </resources>
