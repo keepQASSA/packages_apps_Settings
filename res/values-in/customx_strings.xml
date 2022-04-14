@@ -254,4 +254,6 @@
     <string name="proximity_wake_summary">Periksa sensor jarak sebelum membangunkan layar</string>
     <string name="general_qs_title">Umum</string>
     <string name="rows_columns_qs_title">Baris dan Kolom</string>
+    <string name="maintainer">Pengelola</string>
+    <string name="aosqp_version_title">Versi AOSQP</string>
 </resources>
