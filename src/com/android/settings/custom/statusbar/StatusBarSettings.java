@@ -16,6 +16,7 @@
  */
 package com.android.settings.custom.statusbar;
 
+import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -30,8 +31,10 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
 import com.android.settings.custom.preference.SystemSettingListPreference;
+import com.android.settings.custom.preference.SystemSettingSwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.util.custom.ActionUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -51,6 +54,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
+    private static final String STATUSBAR_ICONS_STYLE = "statusbar_icons_style";
 
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 2;
 
@@ -58,6 +62,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private SystemSettingListPreference mStatusBarAmPm;
     private SystemSettingListPreference mStatusBarBattery;
     private SystemSettingListPreference mStatusBarBatteryShowPercent;
+
+    private SystemSettingSwitchPreference mStatusbarIconsStyle;
 
     private PreferenceCategory mStatusBarBatteryCategory;
     private PreferenceCategory mStatusBarClockCategory;
@@ -68,6 +74,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.status_bar_settings);
+
+        final ContentResolver resolver = getActivity().getContentResolver();
 
         sHasCenteredNotch = CutoutUtils.hasCenteredCutout(getActivity());
 
@@ -89,6 +97,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
         mStatusBarBatteryCategory =
                 (PreferenceCategory) getPreferenceScreen().findPreference(CATEGORY_BATTERY);
+
+        mStatusbarIconsStyle = (SystemSettingSwitchPreference) findPreference(STATUSBAR_ICONS_STYLE);
+        mStatusbarIconsStyle.setChecked((Settings.System.getInt(resolver,
+                Settings.System.STATUSBAR_ICONS_STYLE, 0) == 1));
+        mStatusbarIconsStyle.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -137,6 +150,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+    final ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mStatusbarIconsStyle) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUSBAR_ICONS_STYLE, value ? 1 : 0);
+            ActionUtils.showSystemUiRestartDialog(getContext());
+            return true;
+        }
         int value = Integer.parseInt((String) newValue);
         String key = preference.getKey();
         switch (key) {
