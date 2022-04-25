@@ -31,7 +31,7 @@ import com.android.settings.core.BasePreferenceController;
 
 public class AOSQPVersionPreferenceController extends BasePreferenceController {
 
-    private static final Uri INTENT_URI_DATA = Uri.parse("https://t.me/ngantuprjktch/");
+    private static final Uri INTENT_URI_DATA = Uri.parse("https://t.me/ngantuprjkt/");
     private static final String TAG = "aosqpDialogCtrl";
     private static final String AOSQP_VERSION_PROP = "ro.aosqp.version.number";
     private static final String AOSQP_RELEASETYPE_PROP = "ro.aosqp.build_type";
