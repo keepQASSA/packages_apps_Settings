@@ -31,6 +31,9 @@
         android:theme="?android:attr/actionBarTheme"
         android:navigationContentDescription="@*android:string/action_bar_up_description" />
     <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+    <FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
