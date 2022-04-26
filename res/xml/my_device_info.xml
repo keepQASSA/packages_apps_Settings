@@ -164,7 +164,7 @@
     <Preference
         android:key="build_number"
         android:layout="@layout/xd_pref_card_sin"
-        android:order="53"
+        android:order="60"
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
