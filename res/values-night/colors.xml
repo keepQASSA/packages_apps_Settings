@@ -29,5 +29,6 @@
     <color name="notification_importance_button_selected">#AECBFA</color> <!-- material blue 200 -->
     <color name="notification_importance_button_unselected">#5F6368</color>
     <color name="face_intro_outline">?android:attr/colorAccent</color>
-</resources>
 
+    <color name="color_bw">#FFFFFFFF</color>
+</resources>
