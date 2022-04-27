@@ -22,6 +22,12 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <!-- #keepQASSA Banner -->
+    <PreferenceScreen
+        android:key="keepqassa_banner"
+        android:enabled="false"
+        android:layout="@layout/keepqassa_banner" />
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
