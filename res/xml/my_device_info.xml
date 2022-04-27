@@ -27,6 +27,12 @@
         android:layout="@layout/settings_entity_header"
         settings:isPreferenceVisible="false"/>
 
+    <!-- #keepQASSA Banner -->
+    <PreferenceScreen
+        android:key="keepqassa_banner"
+        android:enabled="false"
+        android:layout="@layout/keepqassa_banner" />
+
     <!-- Device name -->
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="device_name"
