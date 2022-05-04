@@ -91,7 +91,7 @@
     <!-- Kernel -->
     <Preference
         android:key="kernel_version"
-        android:layout="@layout/xd_pref_card_mid"
+        android:layout="@layout/xd_pref_card_bot"
         android:title="@string/kernel_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
@@ -100,7 +100,7 @@
     <!-- Build date -->
     <Preference 
         android:key="build_date"
-        android:layout="@layout/xd_pref_card_mid"
+        android:layout="@layout/xd_pref_card_top"
         android:title="@string/build_date"
         android:summary="@string/build_date_default"
         settings:enableCopying="true"
@@ -109,7 +109,7 @@
     <!-- Build -->
     <Preference
         android:key="os_build_number"
-        android:layout="@layout/xd_pref_card_mid"
+        android:layout="@layout/xd_pref_card_bot"
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
@@ -118,7 +118,7 @@
     <!-- SELinux -->
     <Preference
         android:key="selinux_status"
-        android:layout="@layout/xd_pref_card_bot"
+        android:layout="@layout/xd_pref_card_sin"
         android:title="@string/selinux_status"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="false"
