@@ -49,7 +49,7 @@ public class SwipeToScreenshotGestureSettings extends DashboardFragment {
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.swipe_to_screenshot_gesture_settings;
+        return R.xml.keepqassa_settings_swipe_to_screenshot_gesture;
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
@@ -58,7 +58,7 @@ public class SwipeToScreenshotGestureSettings extends DashboardFragment {
                 public List<SearchIndexableResource> getXmlResourcesToIndex(
                         Context context, boolean enabled) {
                     final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.swipe_to_screenshot_gesture_settings;
+                    sir.xmlResId = R.xml.keepqassa_settings_swipe_to_screenshot_gesture;
                     return Arrays.asList(sir);
                 }
 
