@@ -32,7 +32,7 @@ import com.android.settings.display.NightDisplaySettings;
 import com.android.settings.enterprise.EnterprisePrivacySettings;
 import com.android.settings.fuelgauge.PowerUsageSummary;
 import com.android.settings.fuelgauge.batterysaver.BatterySaverSettings;
-import com.android.settings.gestures.GestureSettings;
+import com.keepqassa.settings.fragments.Gestures;
 import com.android.settings.homepage.TopLevelSettings;
 import com.android.settings.language.LanguageAndInputSettings;
 import com.android.settings.network.NetworkDashboardFragment;
@@ -104,7 +104,7 @@ public class DashboardFragmentRegistry {
                 CategoryKey.CATEGORY_SECURITY_LOCKSCREEN);
         PARENT_TO_CATEGORY_KEY_MAP.put(ZenModeSettings.class.getName(),
                 CategoryKey.CATEGORY_DO_NOT_DISTURB);
-        PARENT_TO_CATEGORY_KEY_MAP.put(GestureSettings.class.getName(),
+        PARENT_TO_CATEGORY_KEY_MAP.put(Gestures.class.getName(),
                 CategoryKey.CATEGORY_GESTURES);
         PARENT_TO_CATEGORY_KEY_MAP.put(NightDisplaySettings.class.getName(),
                 CategoryKey.CATEGORY_NIGHT_DISPLAY);
