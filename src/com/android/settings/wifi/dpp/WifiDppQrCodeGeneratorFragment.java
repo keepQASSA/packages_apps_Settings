@@ -18,6 +18,7 @@ package com.android.settings.wifi.dpp;
 
 import android.app.ActionBar;
 import android.app.settings.SettingsEnums;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -31,6 +32,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.wifi.qrcode.QrCodeGenerator;
@@ -142,6 +144,18 @@ public class WifiDppQrCodeGeneratorFragment extends WifiDppQrCodeBaseFragment {
             } else {
                 mPasswordView.setText(getString(R.string.wifi_dpp_wifi_password, password));
             }
+
+            mPasswordView.setOnClickListener(v -> {
+                Toast.makeText(getContext(), R.string.longpress_to_clipboard, Toast.LENGTH_SHORT).show();
+            });
+
+            mPasswordView.setOnLongClickListener(v -> {
+                ClipboardManager cm = (ClipboardManager) getContext()
+                        .getSystemService(Context.CLIPBOARD_SERVICE);
+                cm.setText(password);
+                Toast.makeText(getContext(), R.string.copied_to_clipboard, Toast.LENGTH_SHORT).show();
+                return true;
+            });
         }
 
         mQrCode = wifiNetworkConfig.getQrCode();
