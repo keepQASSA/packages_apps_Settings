@@ -185,4 +185,6 @@ public class Settings extends SettingsActivity {
     public static class keepQASSAActivity extends SettingsActivity {}
 
     public static class GamingModeActivity extends SettingsActivity {}
+
+    public static class SystemNavigationGestureSettingsActivity extends SettingsActivity {}
 }
