@@ -3366,5 +3366,17 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.keepqassa.settings.fragments.misc.GamingMode" />
         </activity>
+
+        <!-- System navigation -->
+        <activity android:name=".Settings$SystemNavigationGestureSettingsActivity"
+            android:label="@string/system_navigation_title"
+            android:parentActivityName="com.android.settings">
+            <intent-filter android:priority="70">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.gestures.SystemNavigationGestureSettings" />
+        </activity>
     </application>
 </manifest>
