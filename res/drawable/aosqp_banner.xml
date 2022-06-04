@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:tint="?android:attr/colorAccent"
+    android:tint="@color/colorAccentSettings"
     android:height="500dp"
     android:width="1000dp"
     android:viewportWidth="1000.0"
