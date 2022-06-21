@@ -60,7 +60,7 @@ public class DoubleTapPowerSettings extends DashboardFragment {
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.double_tap_power_settings;
+        return R.xml.keepqassa_settings_double_tap_power_settings;
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
@@ -69,7 +69,7 @@ public class DoubleTapPowerSettings extends DashboardFragment {
                 public List<SearchIndexableResource> getXmlResourcesToIndex(
                         Context context, boolean enabled) {
                     final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.double_tap_power_settings;
+                    sir.xmlResId = R.xml.keepqassa_settings_double_tap_power_settings;
                     return Arrays.asList(sir);
                 }
             };
