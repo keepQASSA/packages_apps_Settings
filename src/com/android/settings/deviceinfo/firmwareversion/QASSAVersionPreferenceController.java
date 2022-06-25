@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 Xtended
+ * Copyright (C) 2017 The halogenOS Project
  * Copyright (C) 2022 QASSA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,33 +14,32 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.android.settings.deviceinfo.firmwareversion;
 
 import android.content.Context;
 import android.os.SystemProperties;
+import android.text.TextUtils;
 
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
-public class AboutDeviceNamePreferenceController extends BasePreferenceController {
+public class QASSAVersionPreferenceController extends BasePreferenceController {
 
-    private static final String TAG = "AboutDeviceNameCtrl";
+    private static final String PROPERTY_QASSA_VERSION = "ro.qassa.version.number";
 
-    private static final String KEY_DEVICE_NAME_PROP = "ro.qassa.device";
-
-    public AboutDeviceNamePreferenceController(Context context, String key) {
+    public QASSAVersionPreferenceController(Context context, String key) {
         super(context, key);
     }
 
     @Override
     public int getAvailabilityStatus() {
-        return AVAILABLE;
+        if (!TextUtils.isEmpty(SystemProperties.get(PROPERTY_QASSA_VERSION))) return AVAILABLE;
+        return CONDITIONALLY_UNAVAILABLE;
     }
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(KEY_DEVICE_NAME_PROP,
+        return SystemProperties.get(PROPERTY_QASSA_VERSION,
                 mContext.getString(R.string.unknown));
     }
 }

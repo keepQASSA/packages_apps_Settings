@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2019 The AospExtended Project
- * Copyright (C) 2022 AOSQP
+ * Copyright (C) 2022 QASSA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ import com.android.settings.core.BasePreferenceController;
 public class BuildDatePreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
-    static final String BUILD_DATE_PROPERTY = "ro.aosqp.build_date_short";
+    static final String BUILD_DATE_PROPERTY = "ro.qassa.build_date_short";
 
     public BuildDatePreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
