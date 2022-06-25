@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2017 The halogenOS Project
+ * Copyright (C) 2022 QASSA
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,31 +30,26 @@ import androidx.preference.Preference;
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
-public class AOSQPVersionPreferenceController extends BasePreferenceController {
+    public class QASSAVersionPreferenceController extends BasePreferenceController {
 
     private static final Uri INTENT_URI_DATA = Uri.parse("https://t.me/ngantuprjkt/");
     private static final String TAG = "aosqpDialogCtrl";
-    private static final String AOSQP_VERSION_PROP = "ro.aosqp.version.number";
-    private static final String AOSQP_RELEASETYPE_PROP = "ro.aosqp.build_type";
+    private static final String PROPERTY_QASSA_VERSION = "ro.qassa.version.number";
     private final PackageManager mPackageManager = this.mContext.getPackageManager();
 
-    public AOSQPVersionPreferenceController(Context context, String preferenceKey) {
-        super(context, preferenceKey);
+    public QASSAVersionPreferenceController(Context context, String key) {
+        super(context, key);
     }
 
+    @Override
     public int getAvailabilityStatus() {
-        return AVAILABLE;
+        if (!TextUtils.isEmpty(SystemProperties.get(PROPERTY_QASSA_VERSION))) return AVAILABLE;
+        return CONDITIONALLY_UNAVAILABLE;
     }
 
     public CharSequence getSummary() {
-        String aosqpVersion = SystemProperties.get(AOSQP_VERSION_PROP,
-                mContext.getString(R.string.device_info_default));
-        String aosqpReleasetype =  SystemProperties.get(AOSQP_RELEASETYPE_PROP,
-                this.mContext.getString(R.string.device_info_default));
-        if (!aosqpVersion.isEmpty() && !aosqpReleasetype.isEmpty())
-            return aosqpVersion + " | " + aosqpReleasetype;
-        else
-            return mContext.getString(R.string.unknown);
+        return SystemProperties.get(PROPERTY_QASSA_VERSION,
+                mContext.getString(R.string.unknown));
     }
 
     public boolean handlePreferenceTreeClick(Preference preference) {
