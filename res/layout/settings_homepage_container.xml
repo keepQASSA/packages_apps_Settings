@@ -20,47 +20,42 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/settings_homepage_container"
     android:fitsSystemWindows="true"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/main_content_scrollable_container"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_behavior="com.android.settings.widget.FloatingAppBarScrollingViewBehavior">
 
         <LinearLayout
-            android:orientation="vertical"
             android:id="@+id/homepage_container"
-            android:descendantFocusability="blocksDescendants"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:descendantFocusability="blocksDescendants">
 
-            <com.google.android.material.appbar.AppBarLayout
-                android:background="@android:color/transparent"
-                android:layout_width="fill_parent"
+            <FrameLayout
+                android:id="@+id/contextual_cards_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:touchscreenBlocksFocus="false"
-                android:keyboardNavigationCluster="false"
-                app:elevation="0.0dip">
-
-                <include layout="@layout/settings_homepage_ui" />
-
-                <include layout="@layout/search_bar" />
-
-                <FrameLayout
-                    android:id="@+id/contextual_cards_content"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    style="@style/s_contextual" />
-            </com.google.android.material.appbar.AppBarLayout>
+                android:layout_marginStart="@dimen/contextual_card_side_margin"
+                android:layout_marginEnd="@dimen/contextual_card_side_margin"/>
 
             <FrameLayout
                 android:id="@+id/main_content"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:animateLayoutChanges="true" />
+                android:animateLayoutChanges="true"
+                android:background="?android:attr/windowBackground"/>
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/search_bar"/>
+    </com.google.android.material.appbar.AppBarLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
