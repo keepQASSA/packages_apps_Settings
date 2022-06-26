@@ -150,7 +150,5 @@
 
     <color name="face_intro_outline">#ffdadce0</color>
 
-    <color name="s_color">@color/xd_system_accent_150</color>
-
     <color name="color_bw">#FF000000</color>
 </resources>

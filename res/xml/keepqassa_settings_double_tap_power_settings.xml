@@ -28,11 +28,9 @@
 
     <SwitchPreference
         android:key="gesture_double_tap_power"
-        android:layout="@layout/xd_pref_card_sin"
         android:title="@string/double_tap_power_for_camera_title"
         android:summary="@string/double_tap_power_for_camera_summary"
         app:keywords="@string/keywords_gesture"
-        app:controller="com.android.settings.gestures.DoubleTapPowerPreferenceController"
-        app:allowDividerAbove="false" />
+        app:controller="com.android.settings.gestures.DoubleTapPowerPreferenceController" />
 
 </PreferenceScreen>
