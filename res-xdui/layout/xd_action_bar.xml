@@ -14,15 +14,20 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-
-     <!-- xd. Framework -->
-     <color name="xd_pref_ripple">#1f000000</color>
-     <color name="xd_pref_card_color">@color/xd_system_accent_150</color>
-     <color name="xd_pref_card_opaque">@color/xd_system_accent_100</color>
-     
-     <!-- xd. Firmware Header -->
-     <color name="xd_pref_card_color_firmware-header_start">#9c2426</color>
-     <color name="xd_pref_card_color_firmware-header_end">#de2c30</color>
-
-</resources>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="75dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="21dp"
+    android:layout_marginEnd="75dp"
+    android:baselineAligned="false">
+    <TextView
+        android:textSize="42sp"
+        android:ellipsize="marquee"
+        android:id="@android:id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        style="@style/xd_text_primary" />
+</LinearLayout>
