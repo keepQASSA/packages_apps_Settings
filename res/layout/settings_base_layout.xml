@@ -23,7 +23,6 @@
     android:orientation="vertical">
     <Toolbar
         android:id="@+id/action_bar"
-        android:outlineProvider="none"
         style="?android:attr/actionBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
