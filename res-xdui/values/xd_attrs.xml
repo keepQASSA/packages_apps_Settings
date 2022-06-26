@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright 2021 xdroid, xyzprjkt
+     Copyright (C) 2021 xdroid, xyzprjkt
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,13 +16,12 @@
 -->
 <resources>
 
-     <!-- xd. Framework -->
-     <color name="xd_pref_ripple">#1f000000</color>
-     <color name="xd_pref_card_color">@color/xd_system_accent_150</color>
-     <color name="xd_pref_card_opaque">@color/xd_system_accent_100</color>
-     
-     <!-- xd. Firmware Header -->
-     <color name="xd_pref_card_color_firmware-header_start">#9c2426</color>
-     <color name="xd_pref_card_color_firmware-header_end">#de2c30</color>
+    <!-- Base attributes available to CustomSeekBarPreference. -->
+    <declare-styleable name="CustomSeekBarPreference">
+        <attr name="interval" format="integer" />
+        <attr name="showSign" format="boolean" />
+        <attr name="units" format="string|reference" />
+        <attr name="continuousUpdates" format="boolean" />
+    </declare-styleable>
 
 </resources>
