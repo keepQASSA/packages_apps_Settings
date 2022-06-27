@@ -31,7 +31,6 @@
 
     <Preference
         android:key="top_level_keepqassa"
-        android:layout="@layout/xd_dashboard_pref_mid"
         android:title="@string/keepqassa_dashboard_title"
         android:summary="@string/keepqassa_dashboard_summary"
         android:icon="@drawable/ic_homepage_keepqassa"
