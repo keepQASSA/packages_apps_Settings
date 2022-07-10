@@ -313,7 +313,7 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="proximity_wake_title">Cegah bangun yang tak disengaja</string>
     <string name="proximity_wake_summary">Periksa sensor jarak sebelum membangunkan layar</string>
     <string name="maintainer">Pengelola</string>
-    <string name="aosqp_version_title">Versi AOSQP</string>
+    <string name="qassa_version_title">Versi QASSA</string>
     <string name="about_device_name">Nama perangkat</string>
     <string name="build_date">Tanggal dibuat</string>
     <string name="back_gesture_arrow_message">Tampilkan animasi panah di gestur kembali.</string>
