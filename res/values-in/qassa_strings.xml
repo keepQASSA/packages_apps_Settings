@@ -376,4 +376,5 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="app_info_update_time">Diperbarui: %1$s</string>
     <string name="copied_to_clipboard">Disalin ke clipboard</string>
     <string name="longpress_to_clipboard">Tekan lama untuk menyalin</string>
+    <string name="high_power_apps_summary">Ketersediaan pengoptimalan baterai</string>
 </resources>
