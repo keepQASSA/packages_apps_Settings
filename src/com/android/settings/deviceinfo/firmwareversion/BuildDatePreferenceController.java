@@ -30,7 +30,7 @@ import com.android.settings.core.BasePreferenceController;
 public class BuildDatePreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
-    static final String BUILD_DATE_PROPERTY = "ro.qassa.build_date_short";
+    static final String BUILD_DATE_PROPERTY = "ro.build.date";
 
     public BuildDatePreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
