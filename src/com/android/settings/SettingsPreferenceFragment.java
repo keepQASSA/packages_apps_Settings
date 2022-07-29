@@ -132,7 +132,7 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         SearchMenuController.init(this /* host */);
-        HelpMenuController.init(this /* host */);
+        //HelpMenuController.init(this /* host */);
 
         if (icicle != null) {
             mPreferenceHighlighted = icicle.getBoolean(SAVE_HIGHLIGHTED_KEY);
