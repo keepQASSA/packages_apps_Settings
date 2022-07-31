@@ -33,7 +33,7 @@ import com.android.settings.core.BasePreferenceController;
     public class QASSAVersionPreferenceController extends BasePreferenceController {
 
     private static final Uri INTENT_URI_DATA = Uri.parse("https://t.me/ngantuprjkt/");
-    private static final String TAG = "aosqpDialogCtrl";
+    private static final String TAG = "qassaDialogCtrl";
     private static final String PROPERTY_QASSA_VERSION = "ro.qassa.version.number";
     private final PackageManager mPackageManager = this.mContext.getPackageManager();
 
