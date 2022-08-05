@@ -154,8 +154,6 @@ import com.android.settings.livedisplay.LiveDisplaySettings;
 
 import com.keepqassa.settings.keepQASSA;
 
-import com.keepqassa.settings.fragments.misc.GamingMode;
-
 public class SettingsGateway {
 
     /**
@@ -295,7 +293,6 @@ public class SettingsGateway {
             DarkModeSettingsFragment.class.getName(),
             LiveDisplaySettings.class.getName(),
             keepQASSA.class.getName(),
-            GamingMode.class.getName(),
             RunningServices.class.getName()
     };
 
@@ -336,7 +333,6 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.keepQASSAActivity.class.getName(),
-            Settings.GamingModeActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
     };
 }
