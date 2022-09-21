@@ -436,7 +436,7 @@ Notifications may be delayed for these apps."</string>
     <string name="total_ram">Total RAM</string>
 
     <!-- Device Codename -->
-    <string name="about_device_name">Device Codename</string>
+    <string name="about_device_name">Device codename</string>
 
     <!-- About phone screen, build date -->
     <string name="build_date">Build date</string>
