@@ -372,4 +372,6 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="adb_over_network_summary">Aktifkan proses debug TCP/IP melalui antarmuka jaringan (Wi-Fi, jaringan USB). Pengaturan ini disetel ulang saat reboot</string>
     <string name="adb_over_network_warning">PERINGATAN: Saat ADB melalui jaringan diaktifkan, ponsel Anda terbuka untuk intrusi di semua jaringan yang terhubung, termasuk jaringan data GSM!\n\nHanya gunakan fitur ini saat Anda terhubung di jaringan tepercaya.\n \nApakah Anda benar-benar ingin mengaktifkan fungsi ini?</string>
     <string name="adb_over_network_warning_title">Izinkan ADB melalui jaringan?</string>
+    <string name="app_info_install_time">Terpasang: %1$s</string>
+    <string name="app_info_update_time">Diperbarui: %1$s</string>
 </resources>
