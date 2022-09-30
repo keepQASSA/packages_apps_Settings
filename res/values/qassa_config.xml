@@ -52,9 +52,6 @@
     <string name="config_batDesCap"></string>
     <string name="config_batChargeCycle"></string>
 
-    <!-- Whether to show Google account avatar in settings -->
-    <bool name="config_show_google_account_avatar">true</bool>
-
     <!-- Whether to add AGPS parameter settings -->
     <bool name="config_agps_enabled">true</bool>
 </resources>

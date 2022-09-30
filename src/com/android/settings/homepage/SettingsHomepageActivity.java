@@ -19,14 +19,7 @@ package com.android.settings.homepage;
 import android.animation.LayoutTransition;
 import android.app.ActivityManager;
 import android.app.settings.SettingsEnums;
-import android.content.ComponentName;
-import android.content.Context;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.os.UserHandle;
-import android.os.UserManager;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -38,25 +31,13 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.android.internal.util.UserIcons;
-
 import com.android.settings.R;
 import com.android.settings.accounts.AvatarViewMixin;
 import com.android.settings.core.HideNonSystemOverlayMixin;
 import com.android.settings.homepage.contextualcards.ContextualCardsFragment;
 import com.android.settings.overlay.FeatureFactory;
 
-import com.android.settingslib.drawable.CircleFramedDrawable;
-
-import com.google.android.material.appbar.AppBarLayout;
-
 public class SettingsHomepageActivity extends FragmentActivity {
-
-    Context context;
-    ImageView avatarView;
-    UserManager mUserManager;
-
-    boolean mShowAccountAvatar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,31 +50,12 @@ public class SettingsHomepageActivity extends FragmentActivity {
 
         setHomepageContainerPaddingTop();
 
-        Context context = getApplicationContext();
-
-        mUserManager = context.getSystemService(UserManager.class);
-
         final Toolbar toolbar = findViewById(R.id.search_action_bar);
         FeatureFactory.getFactory(this).getSearchFeatureProvider()
                 .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
 
-        mShowAccountAvatar = getResources().getBoolean(R.bool.config_show_google_account_avatar);
-
-        avatarView = root.findViewById(R.id.account_avatar);
-        if (mShowAccountAvatar) {
-            getLifecycle().addObserver(new AvatarViewMixin(this, avatarView));
-        } else {
-            avatarView.setImageDrawable(getCircularUserIcon(context));
-            avatarView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_MAIN);
-                    intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$UserSettingsActivity"));
-                    startActivity(intent);
-                }
-            });
-        }
-
+        final ImageView avatarView = findViewById(R.id.account_avatar);
+        getLifecycle().addObserver(new AvatarViewMixin(this, avatarView));
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
 
         if (!getSystemService(ActivityManager.class).isLowRamDevice()) {
@@ -120,33 +82,13 @@ public class SettingsHomepageActivity extends FragmentActivity {
 
     @VisibleForTesting
     void setHomepageContainerPaddingTop() {
-        final View view = findViewById(R.id.homepage_container);
-        final AppBarLayout appBarLayout = findViewById(R.id.appbar_layout);
+        final View view = this.findViewById(R.id.homepage_container);
 
-        // use appBarLayout's current height
-        appBarLayout.post(() -> {
-            view.setPadding(0, appBarLayout.getMeasuredHeight(), 0, 0);
-        });
-    }
+        final int searchBarHeight = getResources().getDimensionPixelSize(R.dimen.search_bar_height);
+        final int searchBarMargin = getResources().getDimensionPixelSize(R.dimen.search_bar_margin);
 
-    private Drawable getCircularUserIcon(Context context) {
-        Bitmap bitmapUserIcon = mUserManager.getUserIcon(UserHandle.myUserId());
-
-        if (bitmapUserIcon == null) {
-            // get default user icon.
-            final Drawable defaultUserIcon = UserIcons.getDefaultUserIcon(
-                    context.getResources(), UserHandle.myUserId(), false);
-            bitmapUserIcon = UserIcons.convertToBitmap(defaultUserIcon);
-        }
-        Drawable drawableUserIcon = new CircleFramedDrawable(bitmapUserIcon,
-                bitmapUserIcon.getHeight());
-
-        return drawableUserIcon;
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
+        // The top padding is the height of action bar(48dp) + top/bottom margins(16dp)
+        final int paddingTop = searchBarHeight + searchBarMargin * 2;
+        view.setPadding(0 /* left */, paddingTop, 0 /* right */, 0 /* bottom */);
     }
 }
