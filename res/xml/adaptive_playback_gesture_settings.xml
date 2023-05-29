@@ -19,7 +19,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:key="gesture_adaptive_playback_screen"
-    android:title="@string/adaptive_playback_screen_title">
+    android:title=" ">
+
+    <!-- xd. fake toolbar -->
+    <Preference
+        android:key="xd_action_bar"
+        android:title="@string/adaptive_playback_screen_title"
+        android:layout="@layout/xd_action_bar"
+        android:selectable="false"/>
 
     <com.android.settings.widget.VideoPreference
         android:key="gesture_adaptive_playback_video"
