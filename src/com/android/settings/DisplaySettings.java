@@ -20,7 +20,6 @@ import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
-import androidx.preference.*;
 
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.display.BrightnessLevelPreferenceController;
@@ -55,8 +54,6 @@ public class DisplaySettings extends DashboardFragment {
     private static final String KEY_HIGH_TOUCH_SENSITIVITY = "high_touch_sensitivity_enable";
     private static final String KEY_HIGH_TOUCH_POLLING_RATE = "high_touch_polling_rate_enable";
 
-    private boolean mThemeCustomization;
-
     @Override
     public int getMetricsCategory() {
         return SettingsEnums.DISPLAY;
@@ -75,18 +72,6 @@ public class DisplaySettings extends DashboardFragment {
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-
-    final PreferenceScreen prefScreen = getPreferenceScreen();
-
-    final Preference perfCat = (Preference) prefScreen
-                .findPreference("theme_customization_category");
-
-        mThemeCustomization = getResources().getBoolean(
-                    R.bool.config_enable_theme_customization);
-
-        if (!mThemeCustomization) {
-            prefScreen.removePreference(perfCat);
-        }
     }
 
     @Override
