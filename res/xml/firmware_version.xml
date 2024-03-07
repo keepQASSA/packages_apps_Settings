@@ -80,10 +80,18 @@
         android:title="@string/xd_firmware_security_cat"
         android:selectable="false"/>
 
+    <!-- Custom Security patch -->
+    <Preference
+        android:key="custom_security_key"
+        android:layout="@layout/xd_pref_card_top"
+        android:title="@string/custom_patch"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.CustomPatchLevelPreferenceController"/>
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"
-        android:layout="@layout/xd_pref_card_sin"
+        android:layout="@layout/xd_pref_card_bot"
         android:title="@string/security_patch"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
