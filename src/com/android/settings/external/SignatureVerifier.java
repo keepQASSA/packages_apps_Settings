@@ -49,10 +49,10 @@ public class SignatureVerifier {
         if (!SignatureVerifier.verifyWhitelistedPackage(fullName))
             return false;
 
-        return isSignatureWhitelisted(info);
+        return isSignatureAllowlisted(info);
     }
 
-    private static boolean isSignatureWhitelisted(PackageInfo packageInfo) {
+    private static boolean isSignatureAllowlisted(PackageInfo packageInfo) {
         // Make sure package only has 1 signature
         if (packageInfo.signatures.length != 1)
             return false;
