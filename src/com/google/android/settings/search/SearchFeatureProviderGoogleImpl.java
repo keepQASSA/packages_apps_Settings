@@ -6,7 +6,7 @@ import com.google.android.settings.external.SignatureVerifier;
 
 public class SearchFeatureProviderGoogleImpl extends SearchFeatureProviderImpl {
     @Override
-    public boolean isSignatureWhitelisted(Context context, String str) {
+    public boolean isSignatureAllowlisted(Context context, String str) {
         return SignatureVerifier.isPackageWhitelisted(context, str);
     }
 }
