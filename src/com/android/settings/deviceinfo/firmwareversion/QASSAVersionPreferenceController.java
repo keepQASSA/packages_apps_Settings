@@ -36,6 +36,7 @@ import com.android.settings.core.BasePreferenceController;
     private static final String TAG = "qassaDialogCtrl";
     private static final String QASSA_VERSION_NUMBER = "ro.qassa.version.number";
     private static final String QASSA_BUILD_CODENAME = "ro.qassa.build.codename";
+    private static final String QASSA_BUILD_TYPE = "ro.qassa.build.type";
     private final PackageManager mPackageManager = this.mContext.getPackageManager();
 
     public QASSAVersionPreferenceController(Context context, String preferenceKey) {
@@ -51,8 +52,10 @@ import com.android.settings.core.BasePreferenceController;
                 mContext.getString(R.string.device_info_default));
         String qassaCodename =  SystemProperties.get(QASSA_BUILD_CODENAME,
                 this.mContext.getString(R.string.device_info_default));
+        String qassaReleasetype =  SystemProperties.get(QASSA_BUILD_TYPE,
+                this.mContext.getString(R.string.device_info_default));
         if (!qassaVersion.isEmpty() && !qassaCodename.isEmpty())
-            return qassaVersion + " | " + qassaCodename;
+            return qassaVersion + " | " + qassaCodename + " | " + qassaReleasetype;
         else
             return mContext.getString(R.string.unknown);
     }
