@@ -659,6 +659,6 @@ Notifications may be delayed for these apps."</string>
     <string name="volume_steps_5" translatable="false">5</string>
 
     <!-- "Custom" Security Patch label -->
-    <string name="custom_patch">Custom build release</string>
+    <string name="custom_patch">Android security patch level</string>
     <string name="custom_patch_info">There are no official security patches for this Android version anymore. \nAll patches contained in this build are backports from newer versions.</string>
 </resources>
