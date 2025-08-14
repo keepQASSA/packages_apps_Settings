@@ -83,18 +83,18 @@
     <!-- Custom Security patch -->
     <Preference
         android:key="custom_security_key"
-        android:layout="@layout/xd_pref_card_top"
+        android:layout="@layout/xd_pref_card_sin"
         android:title="@string/custom_patch"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.CustomPatchLevelPreferenceController"/>
 
-    <!-- Security patch -->
+    <!-- Security patch 
     <Preference
         android:key="security_key"
         android:layout="@layout/xd_pref_card_bot"
         android:title="@string/security_patch"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>-->
 
     <!-- Mainline module version
     <Preference
